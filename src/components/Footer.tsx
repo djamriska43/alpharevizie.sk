@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto flex justify-between items-start flex-wrap gap-8">
         <div>
           <div className="flex items-center gap-2.5 mb-4">
-            <Image src="/logo-white.png" alt="Alpha Revízie" width={28} height={28} className="w-7 h-auto" />
+            <Image src="/logo-white.svg" alt="Alpha Revízie" width={28} height={28} className="w-7 h-auto" />
             <span className="font-extrabold text-white">ALPHA REVÍZIE</span>
           </div>
           <div className="text-xs text-gray-500 leading-7">

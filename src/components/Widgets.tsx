@@ -16,7 +16,7 @@ export function FloatingButton() {
         </Link>
       </div>
       <button onClick={() => setOpen(!open)} className={`w-[60px] h-[60px] rounded-full bg-[#00d4ff] text-black flex items-center justify-center text-2xl cursor-pointer transition-all shadow-[0_4px_20px_rgba(0,212,255,0.3)] border-none hover:shadow-[0_8px_30px_rgba(0,212,255,0.4)] max-md:w-[54px] max-md:h-[54px] ${open ? 'rotate-45 !bg-gray-800 !text-white !shadow-[0_4px_20px_rgba(0,0,0,0.3)]' : ''}`}>
-        <Image src="/logo-dark.png" alt="A" width={28} height={28} className={`w-7 h-auto ${open ? 'hidden' : ''}`} />
+        <Image src="/logo-dark.svg" alt="A" width={28} height={28} className={`w-7 h-auto ${open ? 'hidden' : ''}`} />
         {open && <span className="text-xl">+</span>}
       </button>
     </div>

@@ -17,7 +17,7 @@ export default function Navbar() {
     <>
       <nav className={`fixed top-0 left-0 right-0 z-[1000] flex items-center justify-between transition-all duration-500 py-4 px-8 ${scrolled ? 'bg-[#111]/90 backdrop-blur-[20px] backdrop-saturate-[180%] shadow-[0_4px_30px_rgba(0,0,0,0.3)]' : 'bg-transparent'}`}>
         <Link href="/" className="flex items-center gap-3 no-underline">
-          <Image src="/logo-white.png" alt="Alpha Revízie" width={40} height={40} className="w-10 h-auto" />
+          <Image src="/logo-white.svg" alt="Alpha Revízie" width={40} height={40} className="w-10 h-auto" />
           <span className="font-extrabold text-xl text-white tracking-tight">ALPHA <span className="font-normal text-gray-400">REVÍZIE</span></span>
         </Link>
 
