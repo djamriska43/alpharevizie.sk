@@ -27,8 +27,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-5">
-          <a href="mailto:office@alpharevizie.sk" className="text-gray-400 text-sm hover:text-white transition-colors">office@alpharevizie.sk</a>
+        <div className="hidden md:flex items-center gap-3">
+          <a href="mailto:office@alpharevizie.sk" className="flex items-center gap-2 text-gray-300 py-3 px-6 rounded-full font-semibold text-sm border border-white/20 hover:border-[#00d4ff] hover:text-[#00d4ff] transition-all">✉ office@alpharevizie.sk</a>
           <a href="tel:+421952352669" className="flex items-center gap-2 bg-[#00d4ff] text-black py-3 px-6 rounded-full font-bold text-sm hover:shadow-[0_4px_20px_rgba(0,212,255,0.4)] hover:-translate-y-px transition-all">☎ +421 952 352 669</a>
         </div>
 
@@ -45,11 +45,11 @@ export default function Navbar() {
             <Link href="/faq" onClick={() => setMenuOpen(false)} className="text-gray-300 font-medium text-lg hover:text-white">F.A.Q.</Link>
             <Link href="/blog" onClick={() => setMenuOpen(false)} className="text-gray-300 font-medium text-lg hover:text-white">Blog</Link>
             <Link href="/kontakt" onClick={() => setMenuOpen(false)} className="text-gray-300 font-medium text-lg hover:text-white">Kontakt</Link>
+            <a href="mailto:office@alpharevizie.sk" className="text-gray-300 py-3 px-5 rounded-full font-semibold text-sm text-center border border-white/20">✉ office@alpharevizie.sk</a>
             <a href="tel:+421952352669" className="bg-[#00d4ff] text-black py-3 px-5 rounded-full font-bold text-sm text-center">☎ +421 952 352 669</a>
           </div>
         )}
       </nav>
-      {/* Gradient border */}
       <div className={`fixed top-[72px] left-0 right-0 h-[2px] z-[999] bg-gradient-to-r from-[#00d4ff] via-[#ff2d6b] via-[#8b5cf6] to-[#00e676] bg-[length:300%_300%] animate-gradientBorder transition-opacity duration-500 ${scrolled ? 'opacity-100' : 'opacity-20'}`} />
     </>
   );
