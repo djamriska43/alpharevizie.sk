@@ -23,7 +23,7 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="min-h-screen bg-[#111] relative overflow-hidden">
-        <div className="absolute text-[clamp(15rem,25vw,30rem)] font-black text-white/[0.03] right-[-5%] top-1/2 -translate-y-1/2 leading-[0.85] tracking-tighter pointer-events-none select-none">VTZ</div>
+        <div className="absolute right-[-5%] top-1/2 -translate-y-1/2 pointer-events-none select-none opacity-[0.04]"><svg viewBox="285 136 227 211" className="w-[clamp(400px,50vw,700px)] h-auto" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="m502.5 339.9h-29.1l-75.5-128.5 14.7-24.6z"/><path fill="white" d="m370.1 258.1l48.1 81.7h29l-62.5-106.2z"/><path fill="white" d="m402.4 169.4l-14.5-24.6-14.6 24.6-76.2 127.4h29.2l61.4-102.8z"/></svg></div>
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 pt-36 pb-20 relative z-10">
           <div>
             <h1 className="text-[clamp(2.8rem,5vw,4.2rem)] font-black leading-[1.05] tracking-tighter mb-6 text-white animate-fadeUp" style={{animationDelay:'0.1s'}}>Revízie technických zariadení po celom Slovensku</h1>
