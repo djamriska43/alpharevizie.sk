@@ -18,11 +18,11 @@ function FAQItem({q,a,i}:{q:string;a:string;i:number}) {
   const [open,setOpen]=useState(false);
   return (
     <Reveal delay={(i%4)*0.08}>
-      <div className="border-b border-gray-200 py-6 cursor-pointer" onClick={()=>setOpen(!open)}>
-        <div className="flex justify-between items-center font-bold text-base hover:text-gray-600 transition-colors">
-          {q}<span className={`text-xl text-gray-400 transition-transform duration-300 ${open?'rotate-45':''}`}>+</span>
+      <div className="border-b border-white/10 py-6 cursor-pointer" onClick={()=>setOpen(!open)}>
+        <div className="flex justify-between items-center font-bold text-base text-white hover:text-gray-300 transition-colors">
+          {q}<span className={`text-xl text-gray-500 transition-transform duration-300 ${open?'rotate-45':''}`}>+</span>
         </div>
-        <div className={`overflow-hidden transition-all duration-400 text-sm text-gray-500 leading-relaxed ${open?'max-h-[300px] pt-4':'max-h-0'}`}>{a}</div>
+        <div className={`overflow-hidden transition-all duration-400 text-sm text-gray-400 leading-relaxed ${open?'max-h-[300px] pt-4':'max-h-0'}`}>{a}</div>
       </div>
     </Reveal>
   );
@@ -40,7 +40,7 @@ export default function FAQPage() {
           </Reveal>
         </div>
       </section>
-      <section className="py-16 px-8">
+      <section className="py-16 px-8 bg-[#0a0a0a] border-t border-white/5">
         <div className="max-w-[800px] mx-auto">
           {faqs.map((f,i)=><FAQItem key={i} q={f.q} a={f.a} i={i} />)}
         </div>

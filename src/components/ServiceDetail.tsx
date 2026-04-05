@@ -8,45 +8,42 @@ export default function ServiceDetail({ serviceKey }: { serviceKey: ServiceKey }
   const s = services[serviceKey];
   return (
     <>
-      {/* Dark header */}
       <section className="bg-[#111] pt-36 pb-20 px-8">
         <div className="max-w-[1200px] mx-auto">
           <Reveal>
-            <span className="inline-flex font-mono text-xs font-semibold uppercase tracking-[0.15em] py-1.5 px-4 rounded-full mb-6" style={{background:`${s.color}15`,color:s.color}}>{s.tag}</span>
+            <span className="inline-flex font-mono text-xs font-semibold uppercase tracking-[0.15em] py-1.5 px-4 rounded-full mb-6 border" style={{background:`${s.color}15`,color:s.color,borderColor:`${s.color}30`}}>{s.tag}</span>
             <h1 className="text-[clamp(2rem,4vw,3rem)] font-black tracking-tight leading-tight mb-4 text-white">{s.title}</h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-[650px]">{s.desc}</p>
           </Reveal>
         </div>
       </section>
-
-      {/* Content */}
-      <section className="py-20 px-8">
+      <section className="py-20 px-8 bg-[#0a0a0a] border-t border-white/5">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           <Reveal direction="left">
             <div>
-              <h2 className="text-2xl font-extrabold mb-4 tracking-tight">{s.sectionTitle}</h2>
-              <p className="text-gray-500 leading-relaxed mb-6">{s.text1}</p>
-              <p className="text-gray-500 leading-relaxed mb-6">{s.text2}</p>
+              <h2 className="text-2xl font-extrabold mb-4 tracking-tight text-white">{s.sectionTitle}</h2>
+              <p className="text-gray-400 leading-relaxed mb-6">{s.text1}</p>
+              <p className="text-gray-400 leading-relaxed mb-6">{s.text2}</p>
               <ul className="flex flex-col gap-2.5 mb-8 list-none p-0">
                 {s.list.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700 font-medium leading-snug">
-                    <span className="w-2 h-2 rounded-full shrink-0 mt-1.5" style={{background:s.color,boxShadow:`0 0 8px ${s.color}30`}} />
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-300 font-medium leading-snug">
+                    <span className="w-2 h-2 rounded-full shrink-0 mt-1.5" style={{background:s.color,boxShadow:`0 0 8px ${s.color}50`}} />
                     {item}
                   </li>
                 ))}
               </ul>
-              <Link href="/kontakt" className="inline-flex items-center gap-2 bg-black text-white py-4 px-8 rounded-full font-semibold no-underline hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(0,0,0,0.15)] transition-all">Objednať revíziu →</Link>
+              <Link href="/kontakt" className="inline-flex items-center gap-2 bg-[#00e676] text-black py-4 px-8 rounded-full font-bold no-underline hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(0,230,118,0.3)] transition-all">Objednať revíziu →</Link>
             </div>
           </Reveal>
           <Reveal direction="right">
-            <div className="bg-gray-50 rounded-3xl p-10 flex flex-col gap-4 border border-gray-200">
+            <div className="bg-white/[0.03] rounded-3xl p-10 flex flex-col gap-4 border border-white/[0.08]">
               {s.items.map((item, i) => (
-                <div key={i} className="flex items-center justify-between py-4 px-5 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:translate-x-1 transition-all">
+                <div key={i} className="flex items-center justify-between py-4 px-5 bg-white/[0.04] rounded-xl border border-white/[0.06] hover:border-white/[0.15] hover:translate-x-1 transition-all">
                   <div className="flex items-center gap-3">
                     <div className="w-9 h-9 rounded-[10px] flex items-center justify-center text-sm" style={{background:`${s.color}15`}}>{item.icon}</div>
-                    <span className="text-sm font-semibold">{item.text}</span>
+                    <span className="text-sm font-semibold text-white">{item.text}</span>
                   </div>
-                  <span className="font-mono text-[0.62rem] font-medium py-1 px-2.5 rounded-md bg-gray-100 text-gray-500">{item.badge}</span>
+                  <span className="font-mono text-[0.62rem] font-medium py-1 px-2.5 rounded-md bg-white/[0.06] text-gray-400">{item.badge}</span>
                 </div>
               ))}
             </div>
