@@ -29,7 +29,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-5">
           <a href="mailto:office@alpharevizie.sk" className="text-gray-500 text-sm hover:text-black transition-colors">office@alpharevizie.sk</a>
-          <a href="tel:+421952352669" className="flex items-center gap-2 bg-[#00e676] text-black py-3 px-6 rounded-full font-bold text-sm hover:shadow-[0_4px_20px_rgba(0,230,118,0.3)] hover:-translate-y-px transition-all">☎ +421 952 352 669</a>
+          <a href="tel:+421952352669" className="flex items-center gap-2 bg-[#00d4ff] text-black py-3 px-6 rounded-full font-bold text-sm hover:shadow-[0_4px_20px_rgba(0,212,255,0.3)] hover:-translate-y-px transition-all">☎ +421 952 352 669</a>
         </div>
 
         <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden flex flex-col gap-1.5 bg-transparent border-none cursor-pointer">
@@ -45,7 +45,7 @@ export default function Navbar() {
             <Link href="/faq" onClick={() => setMenuOpen(false)} className="text-gray-700 font-medium text-lg">F.A.Q.</Link>
             <Link href="/blog" onClick={() => setMenuOpen(false)} className="text-gray-700 font-medium text-lg">Blog</Link>
             <Link href="/kontakt" onClick={() => setMenuOpen(false)} className="text-gray-700 font-medium text-lg">Kontakt</Link>
-            <a href="tel:+421952352669" className="bg-[#00e676] text-black py-3 px-5 rounded-full font-bold text-sm text-center">☎ +421 952 352 669</a>
+            <a href="tel:+421952352669" className="bg-[#00d4ff] text-black py-3 px-5 rounded-full font-bold text-sm text-center">☎ +421 952 352 669</a>
           </div>
         )}
       </nav>

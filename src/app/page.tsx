@@ -7,8 +7,8 @@ import { services } from '@/lib/services';
 
 const svcKeys = ['ele', 'plyn', 'tlak', 'zdvih'] as const;
 const neonColors = { ele: '#00d4ff', plyn: '#ff2d6b', tlak: '#8b5cf6', zdvih: '#00e676' };
-const bgColors = { ele: 'rgba(0,212,255,0.12)', plyn: 'rgba(255,45,107,0.12)', tlak: 'rgba(139,92,246,0.12)', zdvih: 'rgba(0,230,118,0.12)' };
-const bgColorsStrong = { ele: 'rgba(0,212,255,0.2)', plyn: 'rgba(255,45,107,0.2)', tlak: 'rgba(139,92,246,0.2)', zdvih: 'rgba(0,230,118,0.2)' };
+const bgColors = { ele: 'rgba(0,212,255,0.12)', plyn: 'rgba(255,45,107,0.12)', tlak: 'rgba(139,92,246,0.12)', zdvih: 'rgba(0,212,255,0.12)' };
+const bgColorsStrong = { ele: 'rgba(0,212,255,0.2)', plyn: 'rgba(255,45,107,0.2)', tlak: 'rgba(139,92,246,0.2)', zdvih: 'rgba(0,212,255,0.2)' };
 const procColors = ['#00d4ff', '#ff2d6b', '#00e676'];
 
 const whyItems = [
@@ -29,7 +29,7 @@ export default function Home() {
             <h1 className="text-[clamp(2.8rem,5vw,4.2rem)] font-black leading-[1.05] tracking-tighter mb-6 text-white animate-fadeUp" style={{animationDelay:'0.1s'}}>Revízie technických zariadení po celom Slovensku</h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-[500px] mb-10 animate-fadeUp" style={{animationDelay:'0.2s'}}>Nemusíte hľadať štyroch rôznych technikov. Pokrývame elektrické, plynové, tlakové aj zdvíhacie zariadenia na celom Slovensku.</p>
             <div className="flex gap-4 flex-wrap animate-fadeUp" style={{animationDelay:'0.3s'}}>
-              <Link href="/kontakt" className="inline-flex items-center gap-2 bg-[#00e676] text-black py-4 px-8 rounded-full font-bold no-underline shadow-[0_4px_20px_rgba(0,230,118,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(0,230,118,0.4)] transition-all">✉ Napíšte nám</Link>
+              <Link href="/kontakt" className="inline-flex items-center gap-2 bg-[#00d4ff] text-black py-4 px-8 rounded-full font-bold no-underline shadow-[0_4px_20px_rgba(0,212,255,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(0,212,255,0.4)] transition-all">✉ Napíšte nám</Link>
               <a href="#services" className="inline-flex items-center gap-2 bg-transparent text-white py-4 px-8 rounded-full font-semibold no-underline border-2 border-white/20 hover:border-white/50 transition-all">Pozrieť služby ↓</a>
             </div>
           </div>

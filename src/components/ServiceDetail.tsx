@@ -32,7 +32,7 @@ export default function ServiceDetail({ serviceKey }: { serviceKey: ServiceKey }
                   </li>
                 ))}
               </ul>
-              <Link href="/kontakt" className="inline-flex items-center gap-2 bg-[#00e676] text-black py-4 px-8 rounded-full font-bold no-underline hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(0,230,118,0.3)] transition-all">Objednať revíziu →</Link>
+              <Link href="/kontakt" className="inline-flex items-center gap-2 bg-[#00d4ff] text-black py-4 px-8 rounded-full font-bold no-underline hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(0,212,255,0.3)] transition-all">Objednať revíziu →</Link>
             </div>
           </Reveal>
           <Reveal direction="right">
