@@ -1,3 +1,4 @@
+import { BlogServiceLink } from '@/components/BlogServiceLinks';
 import { BreadcrumbJsonLd, BlogPostingJsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
@@ -61,11 +62,12 @@ export default function Article() {
                 <h3 className="text-lg font-bold text-white mb-2">Potrebujete revíziu elektriky?</h3>
                 <p className="text-sm text-gray-400 mb-4">Zavolajte nám na <a href="tel:+421952352669" className="text-[#00d4ff] font-bold no-underline">+421 952 352 669</a> alebo napíšte na <a href="mailto:office@alpharevizie.sk" className="text-[#00d4ff] no-underline">office@alpharevizie.sk</a>. Revízie robíme po celom Slovensku.</p>
               </div>
+              <BlogServiceLink slug="elektricke-zariadenia" />
             </div>
           </Reveal>
         </div>
       </section>
-      <CTASection />
+    <CTASection />
     </>
   );
 }

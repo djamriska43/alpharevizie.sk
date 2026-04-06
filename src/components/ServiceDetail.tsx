@@ -70,6 +70,35 @@ export default function ServiceDetail({ serviceKey }: { serviceKey: ServiceKey }
         </section>
       )}
 
+      {/* RELATED SERVICES */}
+      <section className="py-20 px-8 bg-[#0a0a0a] border-t border-white/5">
+        <div className="max-w-[1200px] mx-auto">
+          <Reveal>
+            <div className="flex items-center gap-3 text-gray-500 text-xs font-mono uppercase tracking-widest mb-4"><span className="w-5 h-[1.5px] bg-gray-700" />Ďalšie služby</div>
+            <h2 className="text-2xl font-extrabold tracking-tight text-white mb-4">Okrem {s.tag.toLowerCase()} vykonávame revízie aj na ďalších druhoch VTZ</h2>
+          </Reveal>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+            {(Object.keys(services) as ServiceKey[]).filter(k => k !== serviceKey).map((key, i) => {
+              const other = services[key];
+              const neonColors: Record<string, string> = { ele: '#00d4ff', plyn: '#ff2d6b', tlak: '#8b5cf6', zdvih: '#00e676' };
+              return (
+                <Reveal key={key} delay={i * 0.1}>
+                  <Link href={`/${other.slug}`} className={`block p-6 rounded-2xl border border-white/[0.08] bg-white/[0.03] no-underline hover:-translate-y-1.5 hover:border-transparent transition-all duration-400 relative overflow-hidden group glow-${key}`}>
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 rounded-full flex items-center justify-center text-lg border" style={{background:`${neonColors[key]}20`,borderColor:`${neonColors[key]}40`}}>{other.icon}</div>
+                      <h3 className="font-bold text-white">{other.tag}</h3>
+                    </div>
+                    <p className="text-sm text-gray-400 leading-relaxed mb-4">{other.cardDesc}</p>
+                    <span className="text-xs font-bold" style={{color:neonColors[key]}}>Viac informácií →</span>
+                    <div className="absolute bottom-0 left-0 right-0 h-[3px] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-400" style={{background:neonColors[key]}} />
+                  </Link>
+                </Reveal>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       <CTASection />
     </>
   );

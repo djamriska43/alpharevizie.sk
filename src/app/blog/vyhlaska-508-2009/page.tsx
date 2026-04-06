@@ -1,3 +1,4 @@
+import { BlogServiceLinksAll } from '@/components/BlogServiceLinks';
 import { BreadcrumbJsonLd, BlogPostingJsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
@@ -33,6 +34,7 @@ export default function Article() {
         <h3 className="text-lg font-bold text-white mb-2">Potrebujete pomoc s revíziami VTZ?</h3>
         <p className="text-sm text-gray-400">Naši revízni technici majú oprávnenia na všetky štyri druhy VTZ. Zavolajte na <a href="tel:+421952352669" className="text-[#00d4ff] font-bold no-underline">+421 952 352 669</a>.</p>
       </div>
+      <BlogServiceLinksAll />
     </div></Reveal></div></section>
     <CTASection />
   </>);

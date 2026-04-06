@@ -1,3 +1,4 @@
+import { BlogServiceLink } from '@/components/BlogServiceLinks';
 import { BreadcrumbJsonLd, BlogPostingJsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
@@ -37,6 +38,7 @@ export default function Article() {
         <h3 className="text-lg font-bold text-white mb-2">Potrebujete revíziu kotla?</h3>
         <p className="text-sm text-gray-400">Zavolajte nám na <a href="tel:+421952352669" className="text-[#ff2d6b] font-bold no-underline">+421 952 352 669</a>. Revízie plynových zariadení robíme po celom Slovensku.</p>
       </div>
+      <BlogServiceLink slug="plynove-zariadenia" />
     </div></Reveal></div></section>
     <CTASection />
   </>);

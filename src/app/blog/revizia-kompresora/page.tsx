@@ -2,6 +2,7 @@ import { BreadcrumbJsonLd, BlogPostingJsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { CTASection } from '@/components/Widgets';
+import { BlogServiceLink } from '@/components/BlogServiceLinks';
 import { Metadata } from 'next';
 export const metadata: Metadata = { title: 'Kompresor v dielni — potrebuje revíziu? | Alpha Revízie', description: 'Máte kompresor s tlakovou nádobou? Spadá pod VTZ a potrebuje pravidelnú revíziu. Aké sú lehoty a povinnosti prevádzkovateľa?', alternates: { canonical: '/blog/revizia-kompresora' },
 };
@@ -33,6 +34,7 @@ export default function Article() {
         <h3 className="text-lg font-bold text-white mb-2">Máte kompresor, ktorý potrebuje revíziu?</h3>
         <p className="text-sm text-gray-400">Zavolajte na <a href="tel:+421952352669" className="text-[#8b5cf6] font-bold no-underline">+421 952 352 669</a>. Poradíme vám, do akej skupiny vaše zariadenie patrí.</p>
       </div>
+      <BlogServiceLink slug="tlakove-zariadenia" />
     </div></Reveal></div></section>
     <CTASection />
   </>);

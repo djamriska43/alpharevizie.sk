@@ -23,6 +23,13 @@ export const metadata: Metadata = {
     siteName: 'Alpha Revízie',
     locale: 'sk_SK',
     type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Alpha Revízie — Revízie VTZ na celom Slovensku' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Revízie VTZ na celom Slovensku — Alpha Revízie',
+    description: 'Elektrické, plynové, tlakové a zdvíhacie zariadenia. Certifikovaní RT, celé Slovensko.',
+    images: ['/og-image.png'],
   },
 };
 
