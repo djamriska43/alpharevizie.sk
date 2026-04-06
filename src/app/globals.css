@@ -46,6 +46,24 @@ body { font-family: var(--font-outfit), 'Outfit', sans-serif; -webkit-font-smoot
 .glow-icon-tlak:hover .glow-target { box-shadow: 0 0 30px rgba(139,92,246,0.4) !important; }
 .glow-icon-zdvih:hover .glow-target { box-shadow: 0 0 30px rgba(0,230,118,0.4) !important; }
 
+/* WHY US card hover glow — cyan */
+.why-card-glow { transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; }
+.why-card-glow:hover { border-color: #00d4ff !important; box-shadow: 0 0 20px rgba(0,212,255,0.15), 0 0 40px rgba(0,212,255,0.05) !important; }
+
+/* PROCESS step hover glow — per-color */
+.step-glow { transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; }
+.step-glow-cyan:hover { border-color: #00d4ff !important; box-shadow: 0 0 20px rgba(0,212,255,0.15), 0 0 40px rgba(0,212,255,0.05) !important; }
+.step-glow-magenta:hover { border-color: #ff2d6b !important; box-shadow: 0 0 20px rgba(255,45,107,0.15), 0 0 40px rgba(255,45,107,0.05) !important; }
+.step-glow-green:hover { border-color: #00e676 !important; box-shadow: 0 0 20px rgba(0,230,118,0.15), 0 0 40px rgba(0,230,118,0.05) !important; }
+
+/* Mobile: subtle permanent glow on touch devices */
+@media (hover: none) {
+  .why-card-glow { border-color: rgba(0,212,255,0.2) !important; box-shadow: 0 0 15px rgba(0,212,255,0.08) !important; }
+  .step-glow-cyan { border-color: rgba(0,212,255,0.2) !important; box-shadow: 0 0 15px rgba(0,212,255,0.08) !important; }
+  .step-glow-magenta { border-color: rgba(255,45,107,0.2) !important; box-shadow: 0 0 15px rgba(255,45,107,0.08) !important; }
+  .step-glow-green { border-color: rgba(0,230,118,0.2) !important; box-shadow: 0 0 15px rgba(0,230,118,0.08) !important; }
+}
+
 @keyframes fabPulse {
   0%, 100% { box-shadow: 0 4px 20px rgba(0,212,255,0.4); }
   50% { box-shadow: 0 8px 40px rgba(0,212,255,0.6), 0 0 60px rgba(0,212,255,0.25); }
