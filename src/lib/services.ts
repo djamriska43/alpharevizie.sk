@@ -31,45 +31,45 @@ export const services = {
       {
         title: 'Čo kontroluje revízny technik pri revízii elektriky?',
         paragraphs: [
-          'Revízia elektrickej inštalácie nie je len „obídenie rozvádzača." Revízny technik vykoná <strong style="color:#ff2d6b">vizuálnu prehliadku</strong> celej inštalácie — skontroluje stav rozvádzačov, ističov, prúdových chráničov, kabeláže, zásuviek, svietidiel a ich pripojení. Hľadá viditeľné poškodenia, nevyhovujúce spoje, chýbajúce kryty a iné nedostatky.',
-          'Po vizuálnej prehliadke nasledujú <strong style="color:#ff2d6b">merania</strong> — <strong style="color:#ff2d6b">izolačný odpor</strong> vodičov, <strong style="color:#ff2d6b">impedancia poruchovej slučky</strong>, odpor ochranných vodičov, overenie funkčnosti <strong style="color:#ff2d6b">prúdových chráničov (RCD)</strong> a kontrola ochrany pred zásahom elektrickým prúdom. Výsledky meraní sa zaznamenajú do protokolu, ktorý je súčasťou revíznej správy.',
-          'Ak revízny technik nájde závady, rozdelí ich na <strong style="color:#ff2d6b">závady brániace bezpečnej prevádzke</strong> (zariadenie nemožno ďalej prevádzkovať) a <strong style="color:#ff2d6b">závady nebrániace bezpečnej prevádzke</strong> (zariadenie sa môže používať, ale závada sa musí odstrániť do stanoveného termínu).',
+          'Revízia elektrickej inštalácie nie je len „obídenie rozvádzača." Revízny technik vykoná <strong style="color:#00d4ff">vizuálnu prehliadku</strong> celej inštalácie — skontroluje stav rozvádzačov, ističov, prúdových chráničov, kabeláže, zásuviek, svietidiel a ich pripojení. Hľadá viditeľné poškodenia, nevyhovujúce spoje, chýbajúce kryty a iné nedostatky.',
+          'Po vizuálnej prehliadke nasledujú <strong style="color:#00d4ff">merania</strong> — <strong style="color:#00d4ff">izolačný odpor</strong> vodičov, <strong style="color:#00d4ff">impedancia poruchovej slučky</strong>, odpor ochranných vodičov, overenie funkčnosti <strong style="color:#00d4ff">prúdových chráničov (RCD)</strong> a kontrola ochrany pred zásahom elektrickým prúdom. Výsledky meraní sa zaznamenajú do protokolu, ktorý je súčasťou revíznej správy.',
+          'Ak revízny technik nájde závady, rozdelí ich na <strong style="color:#00d4ff">závady brániace bezpečnej prevádzke</strong> (zariadenie nemožno ďalej prevádzkovať) a <strong style="color:#00d4ff">závady nebrániace bezpečnej prevádzke</strong> (zariadenie sa môže používať, ale závada sa musí odstrániť do stanoveného termínu).',
         ],
       },
       {
         title: 'Lehoty periodických revízií elektrickej inštalácie',
         paragraphs: [
-          'Lehoty odborných prehliadok a odborných skúšok elektrickej inštalácie určuje <strong style="color:#ff2d6b">príloha č. 8 vyhlášky č. 508/2009 Z. z.</strong> Lehota závisí od dvoch faktorov — od druhu objektu (tabuľka A) a od klasifikácie vonkajších vplyvov (tabuľka B). Platí vždy kratšia z oboch lehôt.',
-          'Podľa druhu objektu sú lehoty nasledovné: murovaná obytná a kancelárska budova — <strong style="color:#ff2d6b">každých 5 rokov</strong>. Školy, materské školy, jasle, hotely, ubytovacie zariadenia a rekreačné strediská — <strong style="color:#ff2d6b">každé 3 roky</strong>. Výškové budovy a objekty určené na zhromažďovanie viac ako 250 osôb (napríklad obchodné centrá, kultúrne zariadenia, stanice hromadnej dopravy) — <strong style="color:#ff2d6b">každé 2 roky</strong>. Objekty zhotovené z horľavých materiálov so stupňom horľavosti C, D, E a F — <strong style="color:#ff2d6b">každé 2 roky</strong>. Dočasné elektrické inštalácie, napríklad na staveniskách — <strong style="color:#ff2d6b">každých 6 mesiacov</strong>.',
-          'Pre zariadenia na ochranu pred účinkami atmosférickej elektriny (bleskozvody) platia lehoty podľa hladiny ochrany: hladina I a II — <strong style="color:#ff2d6b">každé 2 roky</strong>, hladina III a IV — <strong style="color:#ff2d6b">každé 4 roky</strong>. V priestore s nebezpečenstvom výbuchu je lehota <strong style="color:#ff2d6b">1 rok</strong>.',
+          'Lehoty odborných prehliadok a odborných skúšok elektrickej inštalácie určuje <strong style="color:#00d4ff">príloha č. 8 vyhlášky č. 508/2009 Z. z.</strong> Lehota závisí od dvoch faktorov — od druhu objektu (tabuľka A) a od klasifikácie vonkajších vplyvov (tabuľka B). Platí vždy kratšia z oboch lehôt.',
+          'Podľa druhu objektu sú lehoty nasledovné: murovaná obytná a kancelárska budova — <strong style="color:#00d4ff">každých 5 rokov</strong>. Školy, materské školy, jasle, hotely, ubytovacie zariadenia a rekreačné strediská — <strong style="color:#00d4ff">každé 3 roky</strong>. Výškové budovy a objekty určené na zhromažďovanie viac ako 250 osôb (napríklad obchodné centrá, kultúrne zariadenia, stanice hromadnej dopravy) — <strong style="color:#00d4ff">každé 2 roky</strong>. Objekty zhotovené z horľavých materiálov so stupňom horľavosti C, D, E a F — <strong style="color:#00d4ff">každé 2 roky</strong>. Dočasné elektrické inštalácie, napríklad na staveniskách — <strong style="color:#00d4ff">každých 6 mesiacov</strong>.',
+          'Pre zariadenia na ochranu pred účinkami atmosférickej elektriny (bleskozvody) platia lehoty podľa hladiny ochrany: hladina I a II — <strong style="color:#00d4ff">každé 2 roky</strong>, hladina III a IV — <strong style="color:#00d4ff">každé 4 roky</strong>. V priestore s nebezpečenstvom výbuchu je lehota <strong style="color:#00d4ff">1 rok</strong>.',
         ],
       },
       {
         title: 'Východisková a periodická revízia — aký je rozdiel?',
         paragraphs: [
-          '<strong style="color:#ff2d6b">Východisková revízia</strong> sa vykonáva pred prvým uvedením elektrickej inštalácie do prevádzky. Potrebujete ju vždy, keď sa robí nová elektroinštalácia — napríklad v novostavbe, po kompletnej rekonštrukcii elektriky, po rozšírení existujúcej inštalácie alebo po zmene istenia. Bez platnej východiskovej revíznej správy nesmie byť zariadenie uvedené do prevádzky.',
-          '<strong style="color:#ff2d6b">Periodická revízia</strong> sa vykonáva počas prevádzky v pravidelných lehotách podľa <strong style="color:#ff2d6b">prílohy č. 8 vyhlášky č. 508/2009 Z. z.</strong> Jej cieľom je overiť, že inštalácia je naďalej v bezpečnom stave a spĺňa požiadavky na bezpečnú prevádzku. Obe revízie vykonáva výhradne <strong style="color:#ff2d6b">revízny technik s platným osvedčením</strong>.',
+          '<strong style="color:#00d4ff">Východisková revízia</strong> sa vykonáva pred prvým uvedením elektrickej inštalácie do prevádzky. Potrebujete ju vždy, keď sa robí nová elektroinštalácia — napríklad v novostavbe, po kompletnej rekonštrukcii elektriky, po rozšírení existujúcej inštalácie alebo po zmene istenia. Bez platnej východiskovej revíznej správy nesmie byť zariadenie uvedené do prevádzky.',
+          '<strong style="color:#00d4ff">Periodická revízia</strong> sa vykonáva počas prevádzky v pravidelných lehotách podľa <strong style="color:#00d4ff">prílohy č. 8 vyhlášky č. 508/2009 Z. z.</strong> Jej cieľom je overiť, že inštalácia je naďalej v bezpečnom stave a spĺňa požiadavky na bezpečnú prevádzku. Obe revízie vykonáva výhradne <strong style="color:#00d4ff">revízny technik s platným osvedčením</strong>.',
         ],
       },
       {
         title: 'Revízia elektrických spotrebičov a ručného náradia',
         paragraphs: [
-          'Okrem elektrickej inštalácie podliehajú revízii aj elektrické spotrebiče a elektrické ručné náradie počas ich používania. Rozsah a lehoty revízií upravuje technická norma <strong style="color:#ff2d6b">STN 33 1630:2025</strong>, ktorá nahradila predchádzajúce normy STN 33 1610 a STN 33 1600.',
-          'STN 33 1630:2025 klasifikuje spotrebiče a náradie do <strong style="color:#ff2d6b">skupín A až E</strong> podľa spôsobu a prostredia používania. Lehoty kontrol a revízií sa líšia podľa skupiny — od <strong style="color:#ff2d6b">1 mesiaca</strong> pri náradí v priemyselnom použití až po <strong style="color:#ff2d6b">24 mesiacov</strong> pri spotrebičoch v bežnom prostredí. Presné lehoty závisia od konkrétneho zariadenia a prostredia, v ktorom sa používa.',
+          'Okrem elektrickej inštalácie podliehajú revízii aj elektrické spotrebiče a elektrické ručné náradie počas ich používania. Rozsah a lehoty revízií upravuje technická norma <strong style="color:#00d4ff">STN 33 1630:2025</strong>, ktorá nahradila predchádzajúce normy STN 33 1610 a STN 33 1600.',
+          'STN 33 1630:2025 klasifikuje spotrebiče a náradie do <strong style="color:#00d4ff">skupín A až E</strong> podľa spôsobu a prostredia používania. Lehoty kontrol a revízií sa líšia podľa skupiny — od <strong style="color:#00d4ff">1 mesiaca</strong> pri náradí v priemyselnom použití až po <strong style="color:#00d4ff">24 mesiacov</strong> pri spotrebičoch v bežnom prostredí. Presné lehoty závisia od konkrétneho zariadenia a prostredia, v ktorom sa používa.',
         ],
       },
       {
         title: 'Čo obsahuje revízna správa?',
         paragraphs: [
-          'Po vykonaní revízie vám dodáme kompletnú revíznu správu s <strong style="color:#ff2d6b">okrúhlou pečiatkou revízneho technika</strong>. Revízna správa obsahuje identifikáciu revidovaného zariadenia, rozsah a druh revízie (východisková alebo periodická), súpis vykonaných meraní s nameranými hodnotami, zoznam zistených závad s uvedením ich závažnosti a celkový záver — či je zariadenie <strong style="color:#ff2d6b">spôsobilé</strong> alebo <strong style="color:#ff2d6b">nespôsobilé</strong> na bezpečnú prevádzku.',
-          'Revízna správa s okrúhlou pečiatkou revízneho technika je doklad, ktorý od vás vyžaduje zákon, inšpektorát práce aj poisťovňa. Odporúčame ju uchovávať po celú dobu prevádzky zariadenia — pri <strong style="color:#ff2d6b">kontrole z inšpektorátu práce</strong> ju budete potrebovať predložiť.',
+          'Po vykonaní revízie vám dodáme kompletnú revíznu správu s <strong style="color:#00d4ff">okrúhlou pečiatkou revízneho technika</strong>. Revízna správa obsahuje identifikáciu revidovaného zariadenia, rozsah a druh revízie (východisková alebo periodická), súpis vykonaných meraní s nameranými hodnotami, zoznam zistených závad s uvedením ich závažnosti a celkový záver — či je zariadenie <strong style="color:#00d4ff">spôsobilé</strong> alebo <strong style="color:#00d4ff">nespôsobilé</strong> na bezpečnú prevádzku.',
+          'Revízna správa s okrúhlou pečiatkou revízneho technika je doklad, ktorý od vás vyžaduje zákon, inšpektorát práce aj poisťovňa. Odporúčame ju uchovávať po celú dobu prevádzky zariadenia — pri <strong style="color:#00d4ff">kontrole z inšpektorátu práce</strong> ju budete potrebovať predložiť.',
         ],
       },
       {
         title: 'Čo hrozí bez platnej revízie elektrickej inštalácie?',
         paragraphs: [
-          'Prevádzkovanie elektrickej inštalácie bez platnej revízie je porušenie <strong style="color:#ff2d6b">§ 13 zákona č. 124/2006 Z. z.</strong> o bezpečnosti a ochrane zdravia pri práci. Inšpektorát práce môže za toto porušenie uložiť <strong style="color:#ff2d6b">pokutu až do výšky 100 000 €</strong>. V prípade pracovného úrazu na nezrevídovanom zariadení nesie prevádzkovateľ plnú zodpovednosť — vrátane <strong style="color:#ff2d6b">trestnoprávnej</strong>.',
-          'Rovnako dôležitý je vzťah s poisťovňou. Ak dôjde k škodovej udalosti (napríklad požiar spôsobený skratom) a vy nemáte platnú revíznu správu elektrickej inštalácie, <strong style="color:#ff2d6b">poisťovňa má právo odmietnuť vyplatenie poistného plnenia</strong>. Pravidelná revízia elektriky nie je len papier do šuflíka — je to ochrana vás, vašich zamestnancov a vášho majetku.',
+          'Prevádzkovanie elektrickej inštalácie bez platnej revízie je porušenie <strong style="color:#00d4ff">§ 13 zákona č. 124/2006 Z. z.</strong> o bezpečnosti a ochrane zdravia pri práci. Inšpektorát práce môže za toto porušenie uložiť <strong style="color:#00d4ff">pokutu až do výšky 100 000 €</strong>. V prípade pracovného úrazu na nezrevídovanom zariadení nesie prevádzkovateľ plnú zodpovednosť — vrátane <strong style="color:#00d4ff">trestnoprávnej</strong>.',
+          'Rovnako dôležitý je vzťah s poisťovňou. Ak dôjde k škodovej udalosti (napríklad požiar spôsobený skratom) a vy nemáte platnú revíznu správu elektrickej inštalácie, <strong style="color:#00d4ff">poisťovňa má právo odmietnuť vyplatenie poistného plnenia</strong>. Pravidelná revízia elektriky nie je len papier do šuflíka — je to ochrana vás, vašich zamestnancov a vášho majetku.',
         ],
       },
     ],
@@ -180,11 +180,60 @@ export const services = {
       'Revízia parných a kvapalinových kotlov (trieda I.–V.)',
     ],
     items: [
-      { icon: '🔩', text: 'Tlaková nádoba sk. A', badge: 'VP 1r / VnP 3r / TS 9r' },
-      { icon: '🔧', text: 'Tlaková nádoba sk. B', badge: 'VP 1r / VnP+TS 5r' },
+      { icon: '🔩', text: 'Tlaková nádoba sk. A', badge: 'VP 1r / VnP 5r / TS 10r' },
+      { icon: '🔧', text: 'Tlaková nádoba sk. B', badge: 'VP 1r / VnP 5r / TS 10r' },
       { icon: '💨', text: 'Kompresor + vzdušník', badge: 'podľa skupiny nádoby' },
-      { icon: '♨️', text: 'Parný kotol (I.–IV. trieda)', badge: 'VP 3m–1r / VnP+TS 1–9r' },
-      { icon: '🌡️', text: 'Kvapalinový kotol (V. trieda)', badge: 'VP 1r / VnP 3r' },
+      { icon: '♨️', text: 'Parný kotol (I.–IV. trieda)', badge: 'VP 6m / VnP 1r / TS 6r' },
+      { icon: '🌡️', text: 'Kvapalinový kotol (V. trieda)', badge: 'VP 1r / VnP 1r / TS 10r' },
+    ],
+    extended: [
+      {
+        title: 'Čo je tlaková nádoba a kedy spadá pod VTZ?',
+        paragraphs: [
+          'Tlaková nádoba je každá uzavretá nádoba, v ktorej je médium (plyn, para alebo kvapalina) pod vyšším tlakom ako atmosférický. Medzi najbežnejšie príklady patria <strong style="color:#8b5cf6">vzdušníky kompresorov</strong>, <strong style="color:#8b5cf6">expanzné nádoby</strong> v kotolniach, tlakové zásobníky v priemysle, autoklávy a parné kotly.',
+          'Podľa <strong style="color:#8b5cf6">prílohy č. 1 vyhlášky č. 508/2009 Z. z.</strong> sa tlakové zariadenia zaraďujú do skupín podľa miery ohrozenia. Pre nádoby s nie nebezpečnými plynmi (napríklad vzduch) je rozhodujúci najvyšší pracovný tlak, objem a ich súčin — tzv. <strong style="color:#8b5cf6">bezpečnostný súčin (p × V)</strong>. Ak je tlak vyšší ako 0,2 MPa, objem nad 10 litrov a bezpečnostný súčin nad 200 — ide o <strong style="color:#8b5cf6">skupinu A</strong>. Ak je bezpečnostný súčin nad 50 — ide o <strong style="color:#8b5cf6">skupinu B</strong>.',
+          'V praxi to znamená, že väčšina kompresorov v dielňach a prevádzkach so vzdušníkom nad 50 litrov spadá pod VTZ a podlieha povinným revíziám.',
+        ],
+      },
+      {
+        title: 'Tri druhy revízií tlakových zariadení',
+        paragraphs: [
+          'Na rozdiel od elektrických alebo plynových zariadení, pri tlakových zariadeniach sa vykonávajú <strong style="color:#8b5cf6">tri odlišné druhy kontrol</strong>:',
+          '<strong style="color:#8b5cf6">Vonkajšia prehliadka (VP)</strong> — vizuálna kontrola vonkajšieho stavu nádoby, spojov, armatúr, manometrov, poistných ventilov a bezpečnostného príslušenstva. Overenie, či nie sú viditeľné korózie, deformácie alebo netesnosti.',
+          '<strong style="color:#8b5cf6">Vnútorná prehliadka (VnP)</strong> — kontrola vnútorného povrchu nádoby. Hľadajú sa korózie, trhliny, usadeniny a iné poškodenia, ktoré môžu ovplyvniť pevnosť a tesnosť nádoby. Nádoba musí byť pred vnútornou prehliadkou vyprázdnená a sprístupnená.',
+          '<strong style="color:#8b5cf6">Tlaková skúška (TS)</strong> — nádoba sa naplní skúšobným médiom (zvyčajne vodou) na skúšobný tlak, ktorý je vyšší ako najvyšší pracovný tlak. Sleduje sa, či nedochádza k deformáciám alebo únikom. Je to najprísnejší druh kontroly.',
+        ],
+      },
+      {
+        title: 'Lehoty revízií tlakových zariadení podľa prílohy č. 5',
+        paragraphs: [
+          'Lehoty odborných prehliadok a skúšok tlakových zariadení počas prevádzky určuje <strong style="color:#8b5cf6">príloha č. 5 vyhlášky č. 508/2009 Z. z.</strong> a závisia od skupiny a druhu zariadenia.',
+          'Pre <strong style="color:#8b5cf6">tlakové nádoby skupiny A</strong> (typ b): vonkajšia prehliadka <strong style="color:#8b5cf6">každý rok</strong>, vnútorná prehliadka <strong style="color:#8b5cf6">každých 5 rokov</strong>, tlaková skúška <strong style="color:#8b5cf6">každých 10 rokov</strong>. Navyše sa vykonáva opakovaná úradná skúška oprávnenou právnickou osobou <strong style="color:#8b5cf6">každých 10 rokov</strong>.',
+          'Pre <strong style="color:#8b5cf6">tlakové nádoby skupiny B</strong> (typ b): vonkajšia prehliadka <strong style="color:#8b5cf6">každý rok</strong>, vnútorná prehliadka <strong style="color:#8b5cf6">každých 5 rokov</strong>, tlaková skúška <strong style="color:#8b5cf6">každých 10 rokov</strong>.',
+          'Pre <strong style="color:#8b5cf6">parné kotly skupiny A</strong> (triedy I.–IV.) sú lehoty výrazne prísnejšie: vonkajšia prehliadka <strong style="color:#8b5cf6">každých 6 mesiacov</strong>, vnútorná prehliadka <strong style="color:#8b5cf6">každý rok</strong>, tlaková skúška <strong style="color:#8b5cf6">každých 6 rokov</strong> a opakovaná úradná skúška <strong style="color:#8b5cf6">každých 6 rokov</strong>.',
+        ],
+      },
+      {
+        title: 'Kompresor v dielni — potrebuje revíziu?',
+        paragraphs: [
+          'Áno, ak má <strong style="color:#8b5cf6">vzdušník (tlakovú nádobu)</strong>. Samotný kompresor (motor + hlava) nie je tlakové zariadenie, ale vzdušník, do ktorého kompresor stláča vzduch, už pod VTZ spadá. Rozhodujúci je pracovný tlak a objem vzdušníka.',
+          'Väčšina dielenských kompresorov pracuje s tlakom <strong style="color:#8b5cf6">0,8–1,0 MPa</strong> a má vzdušník s objemom 50–500 litrov. Pri týchto parametroch vzdušník spravidla spadá do <strong style="color:#8b5cf6">skupiny B</strong> (bezpečnostný súčin nad 50). To znamená povinné vonkajšie prehliadky každý rok a vnútorné prehliadky s tlakovou skúškou podľa prílohy č. 5.',
+        ],
+      },
+      {
+        title: 'Čo obsahuje revízna správa tlakovej nádoby?',
+        paragraphs: [
+          'Po vykonaní revízie vám dodáme revíznu správu s <strong style="color:#8b5cf6">okrúhlou pečiatkou revízneho technika</strong>. Správa obsahuje identifikáciu zariadenia (výrobca, rok výroby, výrobné číslo, parametre), druh vykonanej kontroly (VP, VnP alebo TS), popis stavu zariadenia, zistené závady a celkový záver o <strong style="color:#8b5cf6">spôsobilosti na ďalšiu bezpečnú prevádzku</strong>.',
+          'Pri tlakovej skúške správa navyše obsahuje údaje o skúšobnom tlaku, dobe trvania skúšky a výsledok — či nádoba vydržala skúšobný tlak bez deformácií a únikov.',
+        ],
+      },
+      {
+        title: 'Čo hrozí bez platnej revízie tlakovej nádoby?',
+        paragraphs: [
+          'Tlaková nádoba bez revízie je časovaná bomba — doslova. Korózia, únavové trhliny alebo poškodené poistné ventily môžu viesť k <strong style="color:#8b5cf6">výbuchu tlakovej nádoby</strong>, čo má devastačné následky na okolie.',
+          'Z právneho hľadiska je prevádzkovanie tlakovej nádoby bez platnej revízie porušenie <strong style="color:#8b5cf6">§ 13 zákona č. 124/2006 Z. z.</strong> o BOZP. Inšpektorát práce môže uložiť <strong style="color:#8b5cf6">pokutu až do výšky 100 000 €</strong>. V prípade havarie s následkom na zdraví alebo živote hrozí <strong style="color:#8b5cf6">trestnoprávna zodpovednosť</strong> prevádzkovateľa.',
+        ],
+      },
     ],
   },
   zdvih: {
