@@ -5,6 +5,18 @@ import Link from 'next/link';
 
 export function FloatingButton() {
   const [open, setOpen] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  useEffect(() => {
+    const t1 = setTimeout(() => setShowTooltip(true), 3000);
+    const t2 = setTimeout(() => setShowTooltip(false), 7000);
+    const interval = setInterval(() => {
+      setShowTooltip(true);
+      setTimeout(() => setShowTooltip(false), 4000);
+    }, 12000);
+    return () => { clearTimeout(t1); clearTimeout(t2); clearInterval(interval); };
+  }, []);
+
   return (
     <div className="fixed bottom-8 right-8 z-[999] flex flex-col items-end gap-3 max-md:bottom-6 max-md:right-6">
       <div className={`flex flex-col gap-3 transition-all duration-300 ${open ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-4 pointer-events-none scale-90'}`}>
@@ -12,15 +24,20 @@ export function FloatingButton() {
           <span className="w-12 h-12 rounded-full bg-[rgba(0,212,255,0.2)] border-2 border-[rgba(0,212,255,0.4)] flex items-center justify-center text-lg group-hover:shadow-[0_0_15px_rgba(0,212,255,0.3)] transition-shadow">☎</span>
           <span>Zavolať</span>
         </a>
-        <Link href="/kontakt" onClick={() => setOpen(false)} className="flex items-center gap-3 bg-[#1a1a1a] text-white py-3 px-5 rounded-2xl text-sm font-bold shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:-translate-x-1 transition-all no-underline border border-white/10 group">
+        <Link href="/kontakt" onClick={() => { setOpen(false); setShowTooltip(false); }} className="flex items-center gap-3 bg-[#1a1a1a] text-white py-3 px-5 rounded-2xl text-sm font-bold shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:-translate-x-1 transition-all no-underline border border-white/10 group">
           <span className="w-12 h-12 rounded-full bg-[rgba(255,45,107,0.2)] border-2 border-[rgba(255,45,107,0.4)] flex items-center justify-center text-lg group-hover:shadow-[0_0_15px_rgba(255,45,107,0.3)] transition-shadow">✉</span>
           <span>Napíšte nám</span>
         </Link>
       </div>
-      <button onClick={() => setOpen(!open)} className={`w-[62px] h-[62px] rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 border-none max-md:w-[56px] max-md:h-[56px] ${open ? 'bg-[#222] rotate-[135deg] shadow-[0_4px_20px_rgba(0,0,0,0.3)]' : 'bg-[#00d4ff] shadow-[0_4px_20px_rgba(0,212,255,0.3)] hover:shadow-[0_8px_30px_rgba(0,212,255,0.5)] animate-[fabPulse_3s_ease-in-out_infinite]'}`}>
-        {!open && <Image src="/logo-dark.svg" alt="A" width={30} height={30} className="w-[30px] h-auto" />}
-        {open && <span className="text-white text-2xl font-light">+</span>}
-      </button>
+      <div className="flex items-center gap-3">
+        <div className={`bg-[#1a1a1a] text-white py-2.5 px-4 rounded-xl text-sm font-semibold border border-[rgba(0,212,255,0.2)] shadow-[0_4px_20px_rgba(0,0,0,0.3)] transition-all duration-500 cursor-pointer whitespace-nowrap ${showTooltip && !open ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'}`} onClick={() => { setOpen(true); setShowTooltip(false); }}>
+          Potrebujete revíziu? 👋
+        </div>
+        <button onClick={() => { setOpen(!open); setShowTooltip(false); }} className={`w-[62px] h-[62px] rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 border-none max-md:w-[56px] max-md:h-[56px] ${open ? 'bg-[#222] rotate-[135deg] shadow-[0_4px_20px_rgba(0,0,0,0.3)]' : 'bg-[#00d4ff] shadow-[0_4px_20px_rgba(0,212,255,0.4)] hover:shadow-[0_8px_30px_rgba(0,212,255,0.5)] animate-[fabPulse_2s_ease-in-out_infinite]'}`}>
+          {!open && <Image src="/logo-dark.svg" alt="A" width={30} height={30} className="w-[30px] h-auto" />}
+          {open && <span className="text-white text-2xl font-light">+</span>}
+        </button>
+      </div>
     </div>
   );
 }

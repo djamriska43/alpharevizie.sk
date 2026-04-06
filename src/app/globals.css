@@ -47,6 +47,6 @@ body { font-family: var(--font-outfit), 'Outfit', sans-serif; -webkit-font-smoot
 .glow-icon-zdvih:hover .glow-target { box-shadow: 0 0 30px rgba(0,230,118,0.4) !important; }
 
 @keyframes fabPulse {
-  0%, 100% { box-shadow: 0 4px 20px rgba(0,212,255,0.3); }
-  50% { box-shadow: 0 4px 30px rgba(0,212,255,0.5), 0 0 40px rgba(0,212,255,0.15); }
+  0%, 100% { box-shadow: 0 4px 20px rgba(0,212,255,0.4); }
+  50% { box-shadow: 0 8px 40px rgba(0,212,255,0.6), 0 0 60px rgba(0,212,255,0.25); }
 }
