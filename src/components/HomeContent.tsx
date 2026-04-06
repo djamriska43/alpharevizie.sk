@@ -29,7 +29,7 @@ export default function HomeContent() {
             <h1 className="text-[clamp(2.8rem,5vw,4.2rem)] font-black leading-[1.05] tracking-tighter mb-6 text-white animate-fadeUp" style={{animationDelay:'0.1s'}}>Revízie technických zariadení po celom Slovensku</h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-[500px] mb-10 animate-fadeUp" style={{animationDelay:'0.2s'}}>Nemusíte hľadať štyroch rôznych technikov. Pokrývame elektrické, plynové, tlakové aj zdvíhacie zariadenia na celom Slovensku.</p>
             <div className="flex gap-4 flex-wrap animate-fadeUp" style={{animationDelay:'0.3s'}}>
-              <Link href="/kontakt" className="inline-flex items-center gap-2 bg-[#00d4ff] text-black py-4 px-8 rounded-full font-bold no-underline shadow-[0_4px_20px_rgba(0,212,255,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(0,212,255,0.4)] transition-all">Napíšte nám</Link>
+              <Link href="/kontakt" className="inline-flex items-center gap-2 bg-[var(--accent)] text-black py-4 px-8 rounded-full font-bold no-underline shadow-[0_4px_20px_color-mix(in_srgb,var(--accent)_30%,transparent)] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_color-mix(in_srgb,var(--accent)_40%,transparent)] transition-all">Napíšte nám</Link>
               <a href="#services" className="inline-flex items-center gap-2 bg-transparent text-white py-4 px-8 rounded-full font-semibold no-underline border-2 border-white/20 hover:border-white/50 transition-all">Pozrieť služby ↓</a>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function HomeContent() {
       {/* COUNTERS */}
       <section className="bg-[#0a0a0a] py-16 px-8 border-t border-white/5">
         <div className="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
-          <Reveal delay={0}><Counter target={500} suffix="+" label="Vykonaných revízií" color="#00d4ff" /></Reveal>
+          <Reveal delay={0}><Counter target={500} suffix="+" label="Vykonaných revízií" color="var(--accent)" /></Reveal>
           <Reveal delay={0.1}><Counter suffix="SK" label="Celé Slovensko" color="#ff2d6b" /></Reveal>
           <Reveal delay={0.2}><Counter suffix="24/7" label="Sme k dispozícii" color="#8b5cf6" /></Reveal>
           <Reveal delay={0.3}><Counter target={100} suffix="%" label="Spokojnosť klientov" color="#00e676" /></Reveal>

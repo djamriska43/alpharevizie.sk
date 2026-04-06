@@ -19,11 +19,11 @@ const cards = [
   { num: '04', title: 'Prístup', desc: 'Ku každému klientovi pristupujeme individuálne. Riešime vaše konkrétne zariadenia, vaše konkrétne lehoty. Žiadne šablóny, žiadne zbytočné papiere navyše.' },
 ];
 const skills = [
-  { label: 'Elektrické VTZ', w: '100', color: '#00d4ff' },
+  { label: 'Elektrické VTZ', w: '100', color: 'var(--accent)' },
   { label: 'Plynové VTZ', w: '100', color: '#ff2d6b' },
   { label: 'Tlakové VTZ', w: '100', color: '#8b5cf6' },
   { label: 'Zdvíhacie VTZ', w: '100', color: '#00e676' },
-  { label: 'BOZP & PO', w: '100', color: '#00d4ff' },
+  { label: 'BOZP & PO', w: '100', color: 'var(--accent)' },
   { label: 'Školenia & Inštruktáže', w: '100', color: '#ff2d6b' },
 ];
 
@@ -42,7 +42,7 @@ export default function AboutPage() {
       </section>
       <section className="bg-[#0a0a0a] py-14 px-8 border-t border-white/5">
         <div className="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
-          <Reveal delay={0}><Counter target={10} suffix="+" label="Rokov praxe" color="#00d4ff" /></Reveal>
+          <Reveal delay={0}><Counter target={10} suffix="+" label="Rokov praxe" color="var(--accent)" /></Reveal>
           <Reveal delay={0.1}><Counter target={8} suffix="" label="Oprávnení RT" color="#ff2d6b" /></Reveal>
           <Reveal delay={0.2}><Counter target={500} suffix="+" label="Revízií ročne" color="#8b5cf6" /></Reveal>
           <Reveal delay={0.3}><Counter target={8} suffix="" label="Krajov pôsobnosti" color="#00e676" /></Reveal>

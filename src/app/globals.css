@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --accent {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #00d4ff;
+}
+
+:root {
+  --accent: #00d4ff;
+  animation: accentCycle 8s ease-in-out infinite;
+}
+
+@keyframes accentCycle {
+  0%, 100% { --accent: #00d4ff; }
+  25% { --accent: #ff2d6b; }
+  50% { --accent: #8b5cf6; }
+  75% { --accent: #00e676; }
+}
 
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-outfit), 'Outfit', sans-serif; -webkit-font-smoothing: antialiased; background: #111; color: #fff; }
@@ -25,8 +42,8 @@ body { font-family: var(--font-outfit), 'Outfit', sans-serif; -webkit-font-smoot
   50% { opacity: 0.8; transform: scale(1.05); }
 }
 @keyframes neonPulse {
-  0%, 100% { color: #00d4ff; text-shadow: 0 0 10px rgba(0,212,255,0.3); }
-  50% { color: #fff; text-shadow: 0 0 20px rgba(0,212,255,0.5), 0 0 40px rgba(0,212,255,0.2); }
+  0%, 100% { color: var(--accent); text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 30%, transparent); }
+  50% { color: #fff; text-shadow: 0 0 20px color-mix(in srgb, var(--accent) 50%, transparent), 0 0 40px color-mix(in srgb, var(--accent) 20%, transparent); }
 }
 @keyframes skillBar {
   from { width: 0%; }
@@ -37,6 +54,16 @@ body { font-family: var(--font-outfit), 'Outfit', sans-serif; -webkit-font-smoot
 .animate-neonPulse { animation: neonPulse 3s ease-in-out infinite; }
 .gradient-text { background: linear-gradient(135deg, #00d4ff, #ff2d6b, #8b5cf6, #00e676); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
+/* Accent utility classes */
+.accent-bg { background-color: var(--accent); }
+.accent-text { color: var(--accent); }
+.accent-border { border-color: var(--accent); }
+.accent-focus:focus { border-color: var(--accent); box-shadow: 0 0 15px color-mix(in srgb, var(--accent) 15%, transparent); }
+.accent-btn { background-color: var(--accent); color: #000; }
+.accent-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px color-mix(in srgb, var(--accent) 35%, transparent); }
+.accent-glow:hover { box-shadow: 0 20px 50px color-mix(in srgb, var(--accent) 25%, transparent) !important; }
+
+/* VTZ-specific glow (these don't cycle) */
 .glow-ele:hover { box-shadow: 0 20px 50px rgba(0,212,255,0.25) !important; }
 .glow-plyn:hover { box-shadow: 0 20px 50px rgba(255,45,107,0.25) !important; }
 .glow-tlak:hover { box-shadow: 0 20px 50px rgba(139,92,246,0.25) !important; }
@@ -47,6 +74,6 @@ body { font-family: var(--font-outfit), 'Outfit', sans-serif; -webkit-font-smoot
 .glow-icon-zdvih:hover .glow-target { box-shadow: 0 0 30px rgba(0,230,118,0.4) !important; }
 
 @keyframes fabPulse {
-  0%, 100% { box-shadow: 0 4px 20px rgba(0,212,255,0.4); }
-  50% { box-shadow: 0 8px 40px rgba(0,212,255,0.6), 0 0 60px rgba(0,212,255,0.25); }
+  0%, 100% { box-shadow: 0 4px 20px color-mix(in srgb, var(--accent) 40%, transparent); }
+  50% { box-shadow: 0 8px 40px color-mix(in srgb, var(--accent) 60%, transparent), 0 0 60px color-mix(in srgb, var(--accent) 25%, transparent); }
 }

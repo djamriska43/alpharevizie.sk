@@ -30,8 +30,8 @@ export default function GDPRPage() {
                 IČO: 54 610 982<br />
                 DIČ: 2121731810<br />
                 IČ DPH: SK2121731810<br />
-                E-mail: <a href="mailto:office@alpharevizie.sk" className="text-[#00d4ff] no-underline">office@alpharevizie.sk</a><br />
-                Telefón: <a href="tel:+421952352669" className="text-[#00d4ff] no-underline">+421 952 352 669</a>
+                E-mail: <a href="mailto:office@alpharevizie.sk" className="text-[var(--accent)] no-underline">office@alpharevizie.sk</a><br />
+                Telefón: <a href="tel:+421952352669" className="text-[var(--accent)] no-underline">+421 952 352 669</a>
               </div>
 
               <h2 className="text-xl font-extrabold text-white mt-10 mb-4">2. Aké osobné údaje spracúvame</h2>
@@ -53,10 +53,10 @@ export default function GDPRPage() {
               <p className="mb-6">Právo na prístup k osobným údajom (čl. 15 GDPR), právo na opravu nesprávnych údajov (čl. 16 GDPR), právo na vymazanie údajov (čl. 17 GDPR), právo na obmedzenie spracúvania (čl. 18 GDPR), právo na prenosnosť údajov (čl. 20 GDPR), právo namietať proti spracúvaniu (čl. 21 GDPR) a právo odvolať súhlas so spracúvaním kedykoľvek (čl. 7 ods. 3 GDPR).</p>
 
               <h2 className="text-xl font-extrabold text-white mt-10 mb-4">7. Uplatnenie práv</h2>
-              <p className="mb-6">Svoje práva si môžete uplatniť zaslaním žiadosti na e-mailovú adresu <a href="mailto:office@alpharevizie.sk" className="text-[#00d4ff] no-underline">office@alpharevizie.sk</a> alebo písomne na adresu sídla spoločnosti. Na vašu žiadosť odpovieme do 30 dní od jej doručenia.</p>
+              <p className="mb-6">Svoje práva si môžete uplatniť zaslaním žiadosti na e-mailovú adresu <a href="mailto:office@alpharevizie.sk" className="text-[var(--accent)] no-underline">office@alpharevizie.sk</a> alebo písomne na adresu sídla spoločnosti. Na vašu žiadosť odpovieme do 30 dní od jej doručenia.</p>
 
               <h2 className="text-xl font-extrabold text-white mt-10 mb-4">8. Dozorný orgán</h2>
-              <p className="mb-6">Ak sa domnievate, že spracúvanie vašich osobných údajov je v rozpore s právnymi predpismi, máte právo podať sťažnosť na Úrad na ochranu osobných údajov Slovenskej republiky, Hraničná 12, 820 07 Bratislava 27, <a href="https://dataprotection.gov.sk" target="_blank" className="text-[#00d4ff] no-underline">dataprotection.gov.sk</a>.</p>
+              <p className="mb-6">Ak sa domnievate, že spracúvanie vašich osobných údajov je v rozpore s právnymi predpismi, máte právo podať sťažnosť na Úrad na ochranu osobných údajov Slovenskej republiky, Hraničná 12, 820 07 Bratislava 27, <a href="https://dataprotection.gov.sk" target="_blank" className="text-[var(--accent)] no-underline">dataprotection.gov.sk</a>.</p>
 
               <h2 className="text-xl font-extrabold text-white mt-10 mb-4">9. Príjemcovia osobných údajov</h2>
               <p className="mb-6">Vaše osobné údaje neposkytujeme tretím stranám na marketingové účely. Údaje môžu byť poskytnuté len spracovateľom, ktorí pre nás zabezpečujú technické služby (hosting, e-mailové služby) a orgánom verejnej moci v zákonom stanovených prípadoch.</p>

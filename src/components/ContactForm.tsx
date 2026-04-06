@@ -46,17 +46,17 @@ export default function ContactForm() {
         <div className="text-4xl mb-4">✅</div>
         <h3 className="text-xl font-bold text-white mb-2">Správa odoslaná!</h3>
         <p className="text-gray-400 mb-6">Ďakujeme. Ozveme sa vám do 24 hodín.</p>
-        <button onClick={() => setStatus('idle')} className="text-[#00d4ff] font-semibold text-sm hover:underline">Odoslať ďalšiu správu</button>
+        <button onClick={() => setStatus('idle')} className="text-[var(--accent)] font-semibold text-sm hover:underline">Odoslať ďalšiu správu</button>
       </div>
     );
   }
 
   return (
     <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-      <input name="name" type="text" placeholder="Meno a priezvisko" required className="w-full py-4 px-5 border border-white/10 rounded-xl font-sans text-sm outline-none focus:border-[#00d4ff] focus:shadow-[0_0_15px_rgba(0,212,255,0.15)] transition-all bg-white/[0.05] text-white placeholder-gray-500" />
-      <input name="email" type="email" placeholder="E-mail" required className="w-full py-4 px-5 border border-white/10 rounded-xl font-sans text-sm outline-none focus:border-[#00d4ff] focus:shadow-[0_0_15px_rgba(0,212,255,0.15)] transition-all bg-white/[0.05] text-white placeholder-gray-500" />
-      <input name="phone" type="tel" placeholder="Telefón" className="w-full py-4 px-5 border border-white/10 rounded-xl font-sans text-sm outline-none focus:border-[#00d4ff] focus:shadow-[0_0_15px_rgba(0,212,255,0.15)] transition-all bg-white/[0.05] text-white placeholder-gray-500" />
-      <select name="type" required className="w-full py-4 px-5 border border-white/10 rounded-xl font-sans text-sm outline-none focus:border-[#00d4ff] focus:shadow-[0_0_15px_rgba(0,212,255,0.15)] transition-all bg-white/[0.05] text-white">
+      <input name="name" type="text" placeholder="Meno a priezvisko" required className="w-full py-4 px-5 border border-white/10 rounded-xl font-sans text-sm outline-none focus:border-[var(--accent)] focus:shadow-[0_0_15px_color-mix(in_srgb,var(--accent)_15%,transparent)] transition-all bg-white/[0.05] text-white placeholder-gray-500" />
+      <input name="email" type="email" placeholder="E-mail" required className="w-full py-4 px-5 border border-white/10 rounded-xl font-sans text-sm outline-none focus:border-[var(--accent)] focus:shadow-[0_0_15px_color-mix(in_srgb,var(--accent)_15%,transparent)] transition-all bg-white/[0.05] text-white placeholder-gray-500" />
+      <input name="phone" type="tel" placeholder="Telefón" className="w-full py-4 px-5 border border-white/10 rounded-xl font-sans text-sm outline-none focus:border-[var(--accent)] focus:shadow-[0_0_15px_color-mix(in_srgb,var(--accent)_15%,transparent)] transition-all bg-white/[0.05] text-white placeholder-gray-500" />
+      <select name="type" required className="w-full py-4 px-5 border border-white/10 rounded-xl font-sans text-sm outline-none focus:border-[var(--accent)] focus:shadow-[0_0_15px_color-mix(in_srgb,var(--accent)_15%,transparent)] transition-all bg-white/[0.05] text-white">
         <option value="" className="bg-[#111]">Typ revízie...</option>
         <option className="bg-[#111]">Elektrické zariadenia</option>
         <option className="bg-[#111]">Plynové zariadenia</option>
@@ -64,9 +64,9 @@ export default function ContactForm() {
         <option className="bg-[#111]">Zdvíhacie zariadenia</option>
         <option className="bg-[#111]">Iné</option>
       </select>
-      <textarea name="message" placeholder="Opíšte nám, čo potrebujete zrevídovať..." required className="w-full py-4 px-5 border border-white/10 rounded-xl font-sans text-sm outline-none focus:border-[#00d4ff] focus:shadow-[0_0_15px_rgba(0,212,255,0.15)] transition-all bg-white/[0.05] text-white placeholder-gray-500 min-h-[120px] resize-y" />
+      <textarea name="message" placeholder="Opíšte nám, čo potrebujete zrevídovať..." required className="w-full py-4 px-5 border border-white/10 rounded-xl font-sans text-sm outline-none focus:border-[var(--accent)] focus:shadow-[0_0_15px_color-mix(in_srgb,var(--accent)_15%,transparent)] transition-all bg-white/[0.05] text-white placeholder-gray-500 min-h-[120px] resize-y" />
       {status === 'error' && <p className="text-[#ff2d6b] text-sm font-medium">{errorMsg}</p>}
-      <button type="submit" disabled={status === 'loading'} className="bg-[#00d4ff] text-black border-none py-4 px-8 rounded-full font-bold text-sm cursor-pointer font-sans hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(0,212,255,0.35)] transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0">
+      <button type="submit" disabled={status === 'loading'} className="bg-[var(--accent)] text-black border-none py-4 px-8 rounded-full font-bold text-sm cursor-pointer font-sans hover:-translate-y-0.5 hover:shadow-[0_10px_30px_color-mix(in_srgb,var(--accent)_35%,transparent)] transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0">
         {status === 'loading' ? 'Odosielam...' : 'Odoslať správu →'}
       </button>
     </form>

@@ -28,10 +28,10 @@ export default function Home() {
         <div className="absolute right-[-5%] top-1/2 -translate-y-1/2 pointer-events-none select-none opacity-[0.04]"><svg viewBox="285 136 227 211" className="w-[clamp(400px,50vw,700px)] h-auto" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="m502.5 339.9h-29.1l-75.5-128.5 14.7-24.6z"/><path fill="white" d="m370.1 258.1l48.1 81.7h29l-62.5-106.2z"/><path fill="white" d="m402.4 169.4l-14.5-24.6-14.6 24.6-76.2 127.4h29.2l61.4-102.8z"/></svg></div>
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 pt-36 pb-20 relative z-10">
           <div>
-            <h1 className="text-[clamp(2.8rem,5vw,4.2rem)] font-black leading-[1.05] tracking-tighter mb-6 text-white animate-fadeUp" style={{animationDelay:'0.1s'}}>Revízie technických zariadení po celom Slovensku</h1>
+            <h1 className="text-[clamp(2.8rem,5vw,4.2rem)] font-black leading-[1.05] tracking-tighter mb-6 text-white animate-fadeUp" style={{animationDelay:'0.1s'}}>Revízie vyhradených technických zariadení po celom Slovensku</h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-[500px] mb-10 animate-fadeUp" style={{animationDelay:'0.2s'}}>Nemusíte hľadať štyroch rôznych technikov. Pokrývame elektrické, plynové, tlakové aj zdvíhacie zariadenia na celom Slovensku.</p>
             <div className="flex gap-4 flex-wrap animate-fadeUp" style={{animationDelay:'0.3s'}}>
-              <Link href="/kontakt" className="inline-flex items-center gap-2 bg-[#00d4ff] text-black py-4 px-8 rounded-full font-bold no-underline shadow-[0_4px_20px_rgba(0,212,255,0.3)] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(0,212,255,0.4)] transition-all">Napíšte nám</Link>
+              <Link href="/kontakt" className="inline-flex items-center gap-2 bg-[var(--accent)] text-black py-4 px-8 rounded-full font-bold no-underline shadow-[0_4px_20px_color-mix(in_srgb,var(--accent)_30%,transparent)] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_color-mix(in_srgb,var(--accent)_40%,transparent)] transition-all">Napíšte nám</Link>
               <a href="#services" className="inline-flex items-center gap-2 bg-transparent text-white py-4 px-8 rounded-full font-semibold no-underline border-2 border-white/20 hover:border-white/50 transition-all">Pozrieť služby ↓</a>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Home() {
       {/* COUNTERS */}
       <section className="bg-[#0a0a0a] py-16 px-8 border-t border-white/5">
         <div className="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
-          <Reveal delay={0}><Counter target={500} suffix="+" label="Vykonaných revízií" color="#00d4ff" /></Reveal>
+          <Reveal delay={0}><Counter target={500} suffix="+" label="Vykonaných revízií" color="var(--accent)" /></Reveal>
           <Reveal delay={0.1}><Counter suffix="SK" label="Celé Slovensko" color="#ff2d6b" /></Reveal>
           <Reveal delay={0.2}><Counter suffix="24/7" label="Sme k dispozícii" color="#8b5cf6" /></Reveal>
           <Reveal delay={0.3}><Counter target={100} suffix="%" label="Spokojnosť klientov" color="#00e676" /></Reveal>
@@ -122,7 +122,7 @@ export default function Home() {
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14">
             {[
-              {num:'01',title:'Ozvite sa nám',text:'Zavolajte na <strong class="text-white">+421 952 352 669</strong> alebo napíšte na <strong class="text-white">office@alpharevizie.sk</strong>. Povedzte nám, aké zariadenie potrebujete zrevídovať.',glow:'glow-ele',color:'#00d4ff'},
+              {num:'01',title:'Ozvite sa nám',text:'Zavolajte na <strong class="text-white">+421 952 352 669</strong> alebo napíšte na <strong class="text-white">office@alpharevizie.sk</strong>. Povedzte nám, aké zariadenie potrebujete zrevídovať.',glow:'glow-ele',color:'var(--accent)'},
               {num:'02',title:'Dohodneme termín a cenu',text:'Ozveme sa vám do 24 hodín. Dohodneme dátum, rozsah a cenu. Žiadne skryté poplatky.',glow:'glow-plyn',color:'#ff2d6b'},
               {num:'03',title:'Vykonáme revíziu',text:'Prídeme na miesto, vykonáme odbornú prehliadku a skúšku. Do niekoľkých dní vám dodáme kompletnú revíznu správu <strong class="text-white">s okrúhlou pečiatkou revízneho technika</strong> — pripravenú na predloženie pri akejkoľvek kontrole.',glow:'glow-zdvih',color:'#00e676'},
             ].map((step,i) => (

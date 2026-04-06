@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const contactItems = [
-  {icon:'☎',title:'Telefón',color:'#00d4ff',bg:'rgba(0,212,255,0.15)',border:'rgba(0,212,255,0.3)',href:'tel:+421952352669',text:'+421 952 352 669'},
+  {icon:'☎',title:'Telefón',color:'var(--accent)',bg:'color-mix(in srgb, var(--accent) 15%, transparent)',border:'color-mix(in srgb, var(--accent) 30%, transparent)',href:'tel:+421952352669',text:'+421 952 352 669'},
   {icon:'✉',title:'E-mail',color:'#ff2d6b',bg:'rgba(255,45,107,0.15)',border:'rgba(255,45,107,0.3)',href:'mailto:office@alpharevizie.sk',text:'office@alpharevizie.sk'},
   {icon:'📍',title:'Adresa',color:'#8b5cf6',bg:'rgba(139,92,246,0.15)',border:'rgba(139,92,246,0.3)',href:null,text:'Jeleňova 4154/9, 036 01 Martin'},
   {icon:'🏢',title:'Fakturačné údaje',color:'#00e676',bg:'rgba(0,230,118,0.15)',border:'rgba(0,230,118,0.3)',href:null,text:'Alpha Safety s.r.o. · IČO: 54 610 982 · DIČ: 2121731810 · IČ DPH: SK2121731810'},

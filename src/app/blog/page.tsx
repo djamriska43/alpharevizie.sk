@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const posts = [
-  {slug:'revizia-elektrickej-instalacie',icon:'⚡',tag:'Elektrické',color:'#00d4ff',bg:'rgba(0,212,255,0.12)',title:'Kedy potrebujete revíziu elektrickej inštalácie?',desc:'Máte byt, dom alebo prevádzku? Zo zákona musíte mať pravidelnú revíziu elektriky. Aké sú lehoty a čo vám hrozí bez nej?',date:'15. marca 2026'},
+  {slug:'revizia-elektrickej-instalacie',icon:'⚡',tag:'Elektrické',color:'var(--accent)',bg:'rgba(0,212,255,0.12)',title:'Kedy potrebujete revíziu elektrickej inštalácie?',desc:'Máte byt, dom alebo prevádzku? Zo zákona musíte mať pravidelnú revíziu elektriky. Aké sú lehoty a čo vám hrozí bez nej?',date:'15. marca 2026'},
   {slug:'revizia-plynoveho-kotla',icon:'🔥',tag:'Plynové',color:'#ff2d6b',bg:'rgba(255,45,107,0.12)',title:'Revízia plynového kotla — čo zahŕňa a prečo ju neodkladať?',desc:'Plynový kotol je srdcom kúrenia. Kedy treba revíziu, čo kontroluje revízny technik a prečo to neodsúvať na neskôr.',date:'10. marca 2026'},
   {slug:'revizia-kompresora',icon:'⚙️',tag:'Tlakové',color:'#8b5cf6',bg:'rgba(139,92,246,0.12)',title:'Kompresor v dielni — potrebuje revíziu?',desc:'Máte kompresor s tlakovou nádobou? Pravdepodobne spadá pod VTZ. Pozrite sa, aké sú vaše povinnosti.',date:'5. marca 2026'},
   {slug:'revizia-vysokozdvizneho-vozika',icon:'🏗️',tag:'Zdvíhacie',color:'#00e676',bg:'rgba(0,230,118,0.12)',title:'Revízia vysokozdvižného vozíka — lehoty a povinnosti',desc:'Vysokozdvižné vozíky patria medzi VTZ zdvíhacie. Aké sú lehoty odborných prehliadok a skúšok?',date:'28. februára 2026'},
@@ -44,9 +44,9 @@ export default function BlogPage() {
                     <span className="font-mono text-[0.6rem] uppercase tracking-widest py-1 px-2.5 rounded font-semibold" style={{background:p.bg,color:p.color}}>{p.tag}</span>
                     <span className="text-[0.6rem] text-gray-500 font-mono">{p.date}</span>
                   </div>
-                  <h3 className="font-bold leading-snug mb-2 text-white group-hover:text-[#00d4ff] transition-colors">{p.title}</h3>
+                  <h3 className="font-bold leading-snug mb-2 text-white group-hover:text-[var(--accent)] transition-colors">{p.title}</h3>
                   <p className="text-xs text-gray-400 leading-relaxed mb-4">{p.desc}</p>
-                  <span className="text-xs font-bold text-[#00d4ff]">Čítať článok →</span>
+                  <span className="text-xs font-bold text-[var(--accent)]">Čítať článok →</span>
                 </div>
               </Link>
             </Reveal>

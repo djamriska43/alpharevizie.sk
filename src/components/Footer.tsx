@@ -20,15 +20,15 @@ export default function Footer() {
         <div className="flex gap-14 flex-wrap">
           <div>
             <h4 className="text-[0.7rem] font-semibold uppercase tracking-widest text-gray-500 mb-3">Služby</h4>
-            <Link href="/elektricke-zariadenia" className="block text-sm text-gray-400 leading-8 hover:text-[#00d4ff] transition-colors">Elektrické zariadenia</Link>
+            <Link href="/elektricke-zariadenia" className="block text-sm text-gray-400 leading-8 hover:text-[var(--accent)] transition-colors">Elektrické zariadenia</Link>
             <Link href="/plynove-zariadenia" className="block text-sm text-gray-400 leading-8 hover:text-[#ff2d6b] transition-colors">Plynové zariadenia</Link>
             <Link href="/tlakove-zariadenia" className="block text-sm text-gray-400 leading-8 hover:text-[#8b5cf6] transition-colors">Tlakové zariadenia</Link>
             <Link href="/zdvihacie-zariadenia" className="block text-sm text-gray-400 leading-8 hover:text-[#00e676] transition-colors">Zdvíhacie zariadenia</Link>
           </div>
           <div>
             <h4 className="text-[0.7rem] font-semibold uppercase tracking-widest text-gray-500 mb-3">Kontakt</h4>
-            <a href="tel:+421952352669" className="block text-sm text-gray-400 leading-8 hover:text-[#00d4ff] transition-colors">+421 952 352 669</a>
-            <a href="mailto:office@alpharevizie.sk" className="block text-sm text-gray-400 leading-8 hover:text-[#00d4ff] transition-colors">office@alpharevizie.sk</a>
+            <a href="tel:+421952352669" className="block text-sm text-gray-400 leading-8 hover:text-[var(--accent)] transition-colors">+421 952 352 669</a>
+            <a href="mailto:office@alpharevizie.sk" className="block text-sm text-gray-400 leading-8 hover:text-[var(--accent)] transition-colors">office@alpharevizie.sk</a>
             <a href="https://alphasafety.sk" target="_blank" className="block text-sm text-gray-400 leading-8 hover:text-white transition-colors">alphasafety.sk</a>
           </div>
           <div>
