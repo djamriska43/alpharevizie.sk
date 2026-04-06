@@ -100,10 +100,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
             {whyItems.map((item, i) => (
               <Reveal key={i} delay={i * 0.1}>
-                <div className={`text-center p-8 rounded-2xl border border-white/[0.08] bg-white/[0.03] hover:-translate-y-1 transition-all group why-card-glow glow-icon-${item.c}`}>
+                <div className={`text-center p-8 rounded-2xl border border-white/[0.08] bg-white/[0.03] hover:-translate-y-1.5 hover:border-transparent transition-all duration-400 relative overflow-hidden group glow-${item.c} glow-icon-${item.c}`}>
                   <div className="w-[72px] h-[72px] rounded-full flex items-center justify-center mx-auto mb-5 transition-shadow duration-300 glow-target border-2" style={{background:bgColorsStrong[item.c],borderColor:neonColors[item.c]+'50',boxShadow:`0 0 25px ${bgColorsStrong[item.c]}`}}>{item.svg || item.icon}</div>
                   <h3 className="font-bold mb-2 text-white">{item.title}</h3>
                   <p className="text-sm text-gray-400 leading-relaxed">{item.desc}</p>
+                  <div className="absolute bottom-0 left-0 right-0 h-[3px] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-400" style={{background:neonColors[item.c]}} />
                 </div>
               </Reveal>
             ))}
@@ -121,15 +122,16 @@ export default function Home() {
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14">
             {[
-              {num:'01',title:'Ozvite sa nám',text:'Zavolajte na <strong class="text-white">+421 952 352 669</strong> alebo napíšte na <strong class="text-white">office@alpharevizie.sk</strong>. Povedzte nám, aké zariadenie potrebujete zrevídovať.',glow:'step-glow-cyan'},
-              {num:'02',title:'Dohodneme termín a cenu',text:'Ozveme sa vám do 24 hodín. Dohodneme dátum, rozsah a cenu. Žiadne skryté poplatky.',glow:'step-glow-magenta'},
-              {num:'03',title:'Vykonáme revíziu',text:'Prídeme na miesto, vykonáme odbornú prehliadku a skúšku. Do niekoľkých dní vám dodáme kompletnú revíznu správu <strong class="text-white">s okrúhlou pečiatkou revízneho technika</strong> — pripravenú na predloženie pri akejkoľvek kontrole.',glow:'step-glow-green'},
+              {num:'01',title:'Ozvite sa nám',text:'Zavolajte na <strong class="text-white">+421 952 352 669</strong> alebo napíšte na <strong class="text-white">office@alpharevizie.sk</strong>. Povedzte nám, aké zariadenie potrebujete zrevídovať.',glow:'glow-ele',color:'#00d4ff'},
+              {num:'02',title:'Dohodneme termín a cenu',text:'Ozveme sa vám do 24 hodín. Dohodneme dátum, rozsah a cenu. Žiadne skryté poplatky.',glow:'glow-plyn',color:'#ff2d6b'},
+              {num:'03',title:'Vykonáme revíziu',text:'Prídeme na miesto, vykonáme odbornú prehliadku a skúšku. Do niekoľkých dní vám dodáme kompletnú revíznu správu <strong class="text-white">s okrúhlou pečiatkou revízneho technika</strong> — pripravenú na predloženie pri akejkoľvek kontrole.',glow:'glow-zdvih',color:'#00e676'},
             ].map((step,i) => (
               <Reveal key={i} delay={i*0.1}>
-                <div className={`text-center p-10 rounded-2xl border border-white/[0.08] bg-white/[0.03] hover:-translate-y-1 hover:bg-white/[0.05] transition-all step-glow ${step.glow}`}>
+                <div className={`text-center p-10 rounded-2xl border border-white/[0.08] bg-white/[0.03] hover:-translate-y-1.5 hover:border-transparent hover:bg-white/[0.05] transition-all duration-400 relative overflow-hidden group ${step.glow}`}>
                   <div className="font-mono text-6xl font-bold leading-none mb-4" style={{color:procColors[i]}}>{step.num}</div>
                   <h3 className="text-lg font-bold mb-3 text-white">{step.title}</h3>
                   <p className="text-sm text-gray-400 leading-relaxed" dangerouslySetInnerHTML={{__html:step.text}} />
+                  <div className="absolute bottom-0 left-0 right-0 h-[3px] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-400" style={{background:step.color}} />
                 </div>
               </Reveal>
             ))}
