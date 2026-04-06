@@ -70,7 +70,7 @@ export default function Home() {
             {svcKeys.map((key, i) => { const s = services[key]; return (
               <Reveal key={key} delay={i * 0.1}>
                 <Link href={`/${s.slug}`} className={`block bg-white/[0.04] rounded-2xl p-8 border border-white/[0.08] no-underline transition-all duration-400 relative overflow-hidden group cursor-pointer hover:-translate-y-1.5 hover:border-transparent glow-${key}`}>
-                  <div className="w-[64px] h-[64px] rounded-full flex items-center justify-center text-2xl mb-6 border-2" style={{background:bgColors[key],borderColor:neonColors[key]+'50',boxShadow:`0 0 20px ${bgColors[key]}`}}>{s.icon}</div>
+                  <div className="w-[72px] h-[72px] rounded-full flex items-center justify-center text-[30px] mb-6 border-2" style={{background:bgColors[key],borderColor:neonColors[key]+'50',boxShadow:`0 0 20px ${bgColors[key]}`}}>{s.icon}</div>
                   <h3 className="text-lg font-bold text-white mb-3">{s.tag}</h3>
                   <p className="text-sm text-gray-400 leading-relaxed mb-5">{s.cardDesc}</p>
                   <div className="flex flex-col gap-1.5 mb-6">
