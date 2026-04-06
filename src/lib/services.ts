@@ -32,15 +32,16 @@ export const services = {
         title: 'Čo kontroluje revízny technik pri revízii elektriky?',
         paragraphs: [
           'Revízia elektrickej inštalácie nie je len „obídenie rozvádzača." Revízny technik vykoná <strong style="color:#00d4ff">vizuálnu prehliadku</strong> celej inštalácie — skontroluje stav rozvádzačov, ističov, prúdových chráničov, kabeláže, zásuviek, svietidiel a ich pripojení. Hľadá viditeľné poškodenia, nevyhovujúce spoje, chýbajúce kryty a iné nedostatky.',
-          'Po vizuálnej prehliadke nasledujú <strong style="color:#00d4ff">merania</strong> — <strong style="color:#00d4ff">izolačný odpor</strong> vodičov, <strong style="color:#00d4ff">impedancia poruchovej slučky</strong>, odpor ochranných vodičov, overenie funkčnosti <strong style="color:#00d4ff">prúdových chráničov (RCD)</strong> a kontrola ochrany pred zásahom elektrickým prúdom. Výsledky meraní sa zaznamenajú do protokolu, ktorý je súčasťou revíznej správy.',
+          'Po vizuálnej prehliadke nasledujú <strong style="color:#00d4ff">merania</strong> — <strong style="color:#00d4ff">izolačný odpor</strong> vodičov, <strong style="color:#00d4ff">impedancia poruchovej slučky</strong>, <strong style="color:#00d4ff">spojitosť ochranných vodičov</strong>, <strong style="color:#00d4ff">meranie sledu fáz</strong>, overenie funkčnosti <strong style="color:#00d4ff">prúdových chráničov (RCD)</strong> a kontrola ochrany pred zásahom elektrickým prúdom. Výsledky meraní sa zaznamenajú do protokolu, ktorý je súčasťou revíznej správy.',
           'Ak revízny technik nájde závady, rozdelí ich na <strong style="color:#00d4ff">závady brániace bezpečnej prevádzke</strong> (zariadenie nemožno ďalej prevádzkovať) a <strong style="color:#00d4ff">závady nebrániace bezpečnej prevádzke</strong> (zariadenie sa môže používať, ale závada sa musí odstrániť do stanoveného termínu).',
+          'Súčasťou revízie je aj <strong style="color:#00d4ff">kontrola sprievodnej technickej dokumentácie</strong> podľa § 8 vyhlášky č. 508/2009 Z. z. — revízny technik overí existenciu a úplnosť dokladu o súlade (vyhlásenie o zhode), výrobného štítku, pasportu alebo revíznej knihy a <strong style="color:#00d4ff">protokolu o určení vonkajších vplyvov</strong>.',
         ],
       },
       {
         title: 'Lehoty periodických revízií elektrickej inštalácie',
         paragraphs: [
           'Lehoty odborných prehliadok a odborných skúšok elektrickej inštalácie určuje <strong style="color:#00d4ff">príloha č. 8 vyhlášky č. 508/2009 Z. z.</strong> Lehota závisí od dvoch faktorov — od druhu objektu (tabuľka A) a od klasifikácie vonkajších vplyvov (tabuľka B). Platí vždy kratšia z oboch lehôt.',
-          'Podľa druhu objektu sú lehoty nasledovné: murovaná obytná a kancelárska budova — <strong style="color:#00d4ff">každých 5 rokov</strong>. Školy, materské školy, jasle, hotely, ubytovacie zariadenia a rekreačné strediská — <strong style="color:#00d4ff">každé 3 roky</strong>. Výškové budovy a objekty určené na zhromažďovanie viac ako 250 osôb (napríklad obchodné centrá, kultúrne zariadenia, stanice hromadnej dopravy) — <strong style="color:#00d4ff">každé 2 roky</strong>. Objekty zhotovené z horľavých materiálov so stupňom horľavosti C, D, E a F — <strong style="color:#00d4ff">každé 2 roky</strong>. Dočasné elektrické inštalácie, napríklad na staveniskách — <strong style="color:#00d4ff">každých 6 mesiacov</strong>.',
+          'Podľa druhu objektu sú lehoty nasledovné: murovaná obytná a kancelárska budova — <strong style="color:#00d4ff">každých 5 rokov</strong>. Školy, materské školy, jasle, hotely, ubytovacie zariadenia a rekreačné strediská — <strong style="color:#00d4ff">každé 3 roky</strong>. Miestnosti na zdravotnícke účely — <strong style="color:#00d4ff">každé 3 roky</strong>. Výškové budovy a objekty určené na zhromažďovanie viac ako 250 osôb (napríklad obchodné centrá, kultúrne zariadenia, stanice hromadnej dopravy) — <strong style="color:#00d4ff">každé 2 roky</strong>. Objekty zhotovené z horľavých materiálov so stupňom horľavosti C, D, E a F — <strong style="color:#00d4ff">každé 2 roky</strong>. Dočasné elektrické inštalácie, napríklad na staveniskách — <strong style="color:#00d4ff">každých 6 mesiacov</strong>.',
           'Pre zariadenia na ochranu pred účinkami atmosférickej elektriny (bleskozvody) platia lehoty podľa hladiny ochrany: hladina I a II — <strong style="color:#00d4ff">každé 2 roky</strong>, hladina III a IV — <strong style="color:#00d4ff">každé 4 roky</strong>. V priestore s nebezpečenstvom výbuchu je lehota <strong style="color:#00d4ff">1 rok</strong>.',
         ],
       },
@@ -61,7 +62,7 @@ export const services = {
       {
         title: 'Čo obsahuje revízna správa?',
         paragraphs: [
-          'Po vykonaní revízie vám dodáme kompletnú revíznu správu s <strong style="color:#00d4ff">okrúhlou pečiatkou revízneho technika</strong>. Revízna správa obsahuje identifikáciu revidovaného zariadenia, rozsah a druh revízie (východisková alebo periodická), súpis vykonaných meraní s nameranými hodnotami, zoznam zistených závad s uvedením ich závažnosti a celkový záver — či je zariadenie <strong style="color:#00d4ff">spôsobilé</strong> alebo <strong style="color:#00d4ff">nespôsobilé</strong> na bezpečnú prevádzku.',
+          'Po vykonaní revízie vám dodáme kompletnú revíznu správu s <strong style="color:#00d4ff">okrúhlou pečiatkou revízneho technika</strong>. Revízna správa obsahuje identifikáciu revidovaného zariadenia, rozsah a druh revízie (východisková alebo periodická), súpis vykonaných meraní s nameranými hodnotami, zoznam zistených závad s uvedením ich závažnosti a celkový záver — či je zariadenie <strong style="color:#00d4ff">spôsobilé</strong> alebo <strong style="color:#00d4ff">nespôsobilé</strong> na bezpečnú prevádzku. Súčasťou je aj overenie úplnosti <strong style="color:#00d4ff">sprievodnej technickej dokumentácie</strong> podľa prílohy č. 3 vyhlášky č. 508/2009 Z. z.',
           'Revízna správa s okrúhlou pečiatkou revízneho technika je doklad, ktorý od vás vyžaduje zákon, inšpektorát práce aj poisťovňa. Odporúčame ju uchovávať po celú dobu prevádzky zariadenia — pri <strong style="color:#00d4ff">kontrole z inšpektorátu práce</strong> ju budete potrebovať predložiť.',
         ],
       },
@@ -108,7 +109,8 @@ export const services = {
         paragraphs: [
           'Revízia plynového kotla zahŕňa <strong style="color:#ff2d6b">vizuálnu kontrolu</strong> celého zariadenia — stav horáka, výmenníka tepla, ovládacích prvkov, bezpečnostných armatúr a plynových spojov. Revízny technik kontroluje tesnosť plynových rozvodov a prípojok, funkčnosť bezpečnostných prvkov (termostat, poistný ventil, ionizačná elektróda) a stav <strong style="color:#ff2d6b">odvodu spalín</strong> (komín, dymovod).',
           'Súčasťou revízie je aj kontrola vetrania miestnosti, v ktorej je kotol umiestnený. Nedostatočné vetranie v kombinácii s nefunkčným odvodom spalín je jednou z najčastejších príčin <strong style="color:#ff2d6b">otravy oxidom uhoľnatým (CO)</strong> — tichým zabijakom, ktorý každoročne ohrozuje desiatky domácností na Slovensku.',
-          'Po kontrole revízny technik vykoná <strong style="color:#ff2d6b">funkčnú skúšku</strong> zariadenia — overí správny štart horáka, stabilitu plameňa, funkčnosť regulácie a bezpečné odstavenie. Výsledky zaznamená do revíznej správy.',
+          'Po kontrole revízny technik vykoná <strong style="color:#ff2d6b">funkčnú skúšku</strong> zariadenia — overí správny štart horáka, stabilitu plameňa, funkčnosť regulácie a bezpečné odstavenie. Skontroluje tiež prístupnosť a funkčnosť <strong style="color:#ff2d6b">hlavného uzáveru plynu (HUP)</strong> a stav <strong style="color:#ff2d6b">regulátora tlaku plynu</strong>. Výsledky zaznamená do revíznej správy.',
+          'Súčasťou revízie je aj <strong style="color:#ff2d6b">kontrola sprievodnej technickej dokumentácie</strong> podľa § 8 vyhlášky č. 508/2009 Z. z. — revízny technik overí existenciu a úplnosť pasportu, revíznej knihy a dokladu o súlade (vyhlásenie o zhode) podľa prílohy č. 3.',
         ],
       },
       {
@@ -145,7 +147,7 @@ export const services = {
       {
         title: 'Čo obsahuje revízna správa plynového zariadenia?',
         paragraphs: [
-          'Po vykonaní revízie vám dodáme kompletnú revíznu správu s <strong style="color:#ff2d6b">okrúhlou pečiatkou revízneho technika</strong>. Správa obsahuje identifikáciu zariadenia, druh a rozsah vykonanej kontroly, zoznam skontrolovaných častí, zistené závady (ak existujú), celkové hodnotenie stavu zariadenia a záver o <strong style="color:#ff2d6b">spôsobilosti na ďalšiu bezpečnú prevádzku</strong>.',
+          'Po vykonaní revízie vám dodáme kompletnú revíznu správu s <strong style="color:#ff2d6b">okrúhlou pečiatkou revízneho technika</strong>. Správa obsahuje identifikáciu zariadenia, druh a rozsah vykonanej kontroly, zoznam skontrolovaných častí, zistené závady (ak existujú), celkové hodnotenie stavu zariadenia a záver o <strong style="color:#ff2d6b">spôsobilosti na ďalšiu bezpečnú prevádzku</strong>. Súčasťou je aj overenie úplnosti <strong style="color:#ff2d6b">sprievodnej technickej dokumentácie</strong> podľa prílohy č. 3 vyhlášky č. 508/2009 Z. z.',
           'Revízna správa je doklad, ktorý musíte vedieť predložiť pri kontrole z <strong style="color:#ff2d6b">inšpektorátu práce</strong>. Rovnako ju vyžaduje poisťovňa v prípade poistnej udalosti súvisiacej s plynovým zariadením.',
         ],
       },
@@ -191,15 +193,15 @@ export const services = {
         title: 'Čo je tlaková nádoba a kedy spadá pod VTZ?',
         paragraphs: [
           'Tlaková nádoba je každá uzavretá nádoba, v ktorej je médium (plyn, para alebo kvapalina) pod vyšším tlakom ako atmosférický. Medzi najbežnejšie príklady patria <strong style="color:#8b5cf6">vzdušníky kompresorov</strong>, <strong style="color:#8b5cf6">expanzné nádoby</strong> v kotolniach, tlakové zásobníky v priemysle, autoklávy a parné kotly.',
-          'Podľa <strong style="color:#8b5cf6">prílohy č. 1 vyhlášky č. 508/2009 Z. z.</strong> sa tlakové zariadenia zaraďujú do skupín podľa miery ohrozenia. Pre nádoby s nie nebezpečnými plynmi (napríklad vzduch) je rozhodujúci najvyšší pracovný tlak, objem a ich súčin — tzv. <strong style="color:#8b5cf6">bezpečnostný súčin (p × V)</strong>. Ak je tlak vyšší ako 0,2 MPa, objem nad 10 litrov a bezpečnostný súčin nad 200 — ide o <strong style="color:#8b5cf6">skupinu A</strong>. Ak je bezpečnostný súčin nad 50 — ide o <strong style="color:#8b5cf6">skupinu B</strong>.',
-          'V praxi to znamená, že väčšina kompresorov v dielňach a prevádzkach so vzdušníkom nad 50 litrov spadá pod VTZ a podlieha povinným revíziám.',
+          'Podľa <strong style="color:#8b5cf6">prílohy č. 1 vyhlášky č. 508/2009 Z. z.</strong> sa tlakové zariadenia zaraďujú do skupín podľa miery ohrozenia. Pre nádoby s nie nebezpečnými plynmi (napríklad vzduch) je rozhodujúci najvyšší pracovný tlak, objem a ich súčin — tzv. <strong style="color:#8b5cf6">bezpečnostný súčin (p × V)</strong>, kde p je v MPa a V v litroch. Ak je tlak vyšší ako 0,2 MPa, objem nad 10 litrov a bezpečnostný súčin väčší ako 20 — ide o <strong style="color:#8b5cf6">skupinu A</strong>. Ak je bezpečnostný súčin väčší ako 5, ale menší alebo rovný 20 — ide o <strong style="color:#8b5cf6">skupinu B</strong>.',
+          'V praxi to znamená, že aj bežný dielenský kompresor so vzdušníkom 50 litrov a tlakom 0,8 MPa má bezpečnostný súčin 40 (0,8 × 50), čo ho zaraďuje do <strong style="color:#8b5cf6">skupiny A</strong>. Do skupiny B spadajú len kompresory s menším vzdušníkom — približne do 25 litrov pri bežnom pracovnom tlaku.',
         ],
       },
       {
         title: 'Tri druhy revízií tlakových zariadení',
         paragraphs: [
           'Na rozdiel od elektrických alebo plynových zariadení, pri tlakových zariadeniach sa vykonávajú <strong style="color:#8b5cf6">tri odlišné druhy kontrol</strong>:',
-          '<strong style="color:#8b5cf6">Vonkajšia prehliadka (VP)</strong> — vizuálna kontrola vonkajšieho stavu nádoby, spojov, armatúr, manometrov, poistných ventilov a bezpečnostného príslušenstva. Overenie, či nie sú viditeľné korózie, deformácie alebo netesnosti.',
+          '<strong style="color:#8b5cf6">Vonkajšia prehliadka (VP)</strong> — vizuálna kontrola vonkajšieho stavu nádoby, spojov, armatúr, <strong style="color:#8b5cf6">manometrov</strong> (overenie kalibrácie), <strong style="color:#8b5cf6">poistných ventilov</strong> (funkčnosť a nastavenie otvárania) a bezpečnostného príslušenstva. Overenie, či nie sú viditeľné korózie, deformácie alebo netesnosti. Súčasťou je aj <strong style="color:#8b5cf6">kontrola sprievodnej technickej dokumentácie</strong> podľa § 8 vyhlášky č. 508/2009 Z. z. — pasport, revízna kniha, výrobný štítok a doklad o súlade (vyhlásenie o zhode).',
           '<strong style="color:#8b5cf6">Vnútorná prehliadka (VnP)</strong> — kontrola vnútorného povrchu nádoby. Hľadajú sa korózie, trhliny, usadeniny a iné poškodenia, ktoré môžu ovplyvniť pevnosť a tesnosť nádoby. Nádoba musí byť pred vnútornou prehliadkou vyprázdnená a sprístupnená.',
           '<strong style="color:#8b5cf6">Tlaková skúška (TS)</strong> — nádoba sa naplní skúšobným médiom (zvyčajne vodou) na skúšobný tlak, ktorý je vyšší ako najvyšší pracovný tlak. Sleduje sa, či nedochádza k deformáciám alebo únikom. Je to najprísnejší druh kontroly.',
         ],
@@ -217,13 +219,13 @@ export const services = {
         title: 'Kompresor v dielni — potrebuje revíziu?',
         paragraphs: [
           'Áno, ak má <strong style="color:#8b5cf6">vzdušník (tlakovú nádobu)</strong>. Samotný kompresor (motor + hlava) nie je tlakové zariadenie, ale vzdušník, do ktorého kompresor stláča vzduch, už pod VTZ spadá. Rozhodujúci je pracovný tlak a objem vzdušníka.',
-          'Väčšina dielenských kompresorov pracuje s tlakom <strong style="color:#8b5cf6">0,8–1,0 MPa</strong> a má vzdušník s objemom 50–500 litrov. Pri týchto parametroch vzdušník spravidla spadá do <strong style="color:#8b5cf6">skupiny B</strong> (bezpečnostný súčin nad 50). To znamená povinné vonkajšie prehliadky každý rok a vnútorné prehliadky s tlakovou skúškou podľa prílohy č. 5.',
+          'Väčšina dielenských kompresorov pracuje s tlakom <strong style="color:#8b5cf6">0,8–1,0 MPa</strong> a má vzdušník s objemom 50–500 litrov. Pri týchto parametroch je bezpečnostný súčin väčší ako 20, čo znamená zaradenie do <strong style="color:#8b5cf6">skupiny A</strong>. To znamená povinné vonkajšie prehliadky každý rok, vnútorné prehliadky každých 5 rokov, tlakové skúšky každých 10 rokov a opakovanú úradnú skúšku oprávnenou právnickou osobou každých 10 rokov.',
         ],
       },
       {
         title: 'Čo obsahuje revízna správa tlakovej nádoby?',
         paragraphs: [
-          'Po vykonaní revízie vám dodáme revíznu správu s <strong style="color:#8b5cf6">okrúhlou pečiatkou revízneho technika</strong>. Správa obsahuje identifikáciu zariadenia (výrobca, rok výroby, výrobné číslo, parametre), druh vykonanej kontroly (VP, VnP alebo TS), popis stavu zariadenia, zistené závady a celkový záver o <strong style="color:#8b5cf6">spôsobilosti na ďalšiu bezpečnú prevádzku</strong>.',
+          'Po vykonaní revízie vám dodáme revíznu správu s <strong style="color:#8b5cf6">okrúhlou pečiatkou revízneho technika</strong>. Správa obsahuje identifikáciu zariadenia (výrobca, rok výroby, výrobné číslo, parametre), druh vykonanej kontroly (VP, VnP alebo TS), popis stavu zariadenia, zistené závady a celkový záver o <strong style="color:#8b5cf6">spôsobilosti na ďalšiu bezpečnú prevádzku</strong>. Súčasťou je aj overenie úplnosti <strong style="color:#8b5cf6">sprievodnej technickej dokumentácie</strong> podľa prílohy č. 3 vyhlášky č. 508/2009 Z. z.',
           'Pri tlakovej skúške správa navyše obsahuje údaje o skúšobnom tlaku, dobe trvania skúšky a výsledok — či nádoba vydržala skúšobný tlak bez deformácií a únikov.',
         ],
       },
@@ -259,11 +261,11 @@ export const services = {
       'Revízia stavebných výťahov a pohyblivých plošín',
     ],
     items: [
-      { icon: '🏗️', text: 'Žeriav nad 1 000 kg (sk. A)', badge: 'OP 1r / OS 2r' },
+      { icon: '🏗️', text: 'Žeriav nad 1 000 kg (sk. A)', badge: 'OP 2r / OS 4r' },
       { icon: '🚪', text: 'Priemyselná brána s mot. pohonom', badge: 'lehoty podľa výrobcu' },
-      { icon: '📐', text: 'Zdvíhacia plošina', badge: 'OP 3m / OS 1r' },
-      { icon: '🔧', text: 'Autozdvihák (hydraulický)', badge: 'OP 1r / OS podľa výrobcu' },
-      { icon: '🚜', text: 'Vysokozdvižný vozík', badge: 'OP 6m / OS 1r' },
+      { icon: '📐', text: 'Pohyblivá pracovná plošina', badge: 'OP 1r / OS 2r' },
+      { icon: '🔧', text: 'Autozdvihák (hydraulický)', badge: 'podľa TPV' },
+      { icon: '🚜', text: 'Vysokozdvižný vozík', badge: 'podľa TPV' },
       { icon: '🔗', text: 'Viazacie prostriedky', badge: 'kontrola pred použitím' },
     ],
     extended: [
@@ -282,6 +284,14 @@ export const services = {
           'Pre <strong style="color:#00e676">žeriavy skupiny A</strong> (nad 1 000 kg) sú lehoty: odborná prehliadka <strong style="color:#00e676">každé 2 roky</strong> a odborná skúška <strong style="color:#00e676">každé 4 roky</strong>. Pre stavebné žeriavy, mobilné žeriavy, nakladacie žeriavy (hydraulické ruky) a žeriavy v agresívnom prostredí sú lehoty prísnejšie — OP <strong style="color:#00e676">každý rok</strong> a OS <strong style="color:#00e676">každé 2 roky</strong>.',
           'Pre <strong style="color:#00e676">pohyblivé pracovné plošiny</strong> skupiny A: odborná prehliadka <strong style="color:#00e676">každý rok</strong>, odborná skúška <strong style="color:#00e676">každé 2 roky</strong> a opakovaná úradná skúška <strong style="color:#00e676">každých 10 rokov</strong>.',
           'Pre <strong style="color:#00e676">vysokozdvižné vozíky</strong> a <strong style="color:#00e676">priemyselné brány</strong> (skupina B) sa lehoty riadia podľa technických podmienok výrobcu. V praxi to znamená lehoty stanovené v návode na obsluhu a údržbu od výrobcu zariadenia.',
+        ],
+      },
+      {
+        title: 'Čo kontroluje revízny technik pri revízii zdvíhacieho zariadenia?',
+        paragraphs: [
+          'Rozsah kontroly závisí od druhu zariadenia. Pri <strong style="color:#00e676">žeriavoch</strong> revízny technik kontroluje stav nosných oceľových konštrukcií (korózia, trhliny, stav zvarov), <strong style="color:#00e676">nosné laná a reťaze</strong> (opotrebenie, predĺženie, poškodenie drôtov), funkčnosť <strong style="color:#00e676">koncových vypínačov</strong> a bezpečnostných prvkov, brzdový systém a stav <strong style="color:#00e676">žeriavovej dráhy</strong>.',
+          'Pri <strong style="color:#00e676">vysokozdvižných vozíkoch</strong> sa kontroluje zdvíhací mechanizmus (vidlice, reťaze, valce), riadenie, brzdy, osvetlenie, výstražná signalizácia a celkový technický stav vozíka.',
+          'Pri všetkých zdvíhacích zariadeniach revízny technik zároveň kontroluje <strong style="color:#00e676">sprievodnú technickú dokumentáciu</strong> podľa § 8 vyhlášky č. 508/2009 Z. z. — pasport, revíznu knihu, doklad o súlade (vyhlásenie o zhode) a evidenciu VTZ podľa prílohy č. 4.',
         ],
       },
       {
@@ -308,7 +318,7 @@ export const services = {
       {
         title: 'Čo obsahuje revízna správa zdvíhacieho zariadenia?',
         paragraphs: [
-          'Po vykonaní revízie vám dodáme revíznu správu s <strong style="color:#00e676">okrúhlou pečiatkou revízneho technika</strong>. Správa obsahuje identifikáciu zariadenia (typ, výrobca, výrobné číslo, nosnosť), druh vykonanej kontroly (OP alebo OS), popis stavu zariadenia, zoznam zistených závad a celkový záver o <strong style="color:#00e676">spôsobilosti na ďalšiu bezpečnú prevádzku</strong>.',
+          'Po vykonaní revízie vám dodáme revíznu správu s <strong style="color:#00e676">okrúhlou pečiatkou revízneho technika</strong>. Správa obsahuje identifikáciu zariadenia (typ, výrobca, výrobné číslo, nosnosť), druh vykonanej kontroly (OP alebo OS), popis stavu zariadenia, zoznam zistených závad a celkový záver o <strong style="color:#00e676">spôsobilosti na ďalšiu bezpečnú prevádzku</strong>. Súčasťou je aj overenie úplnosti <strong style="color:#00e676">sprievodnej technickej dokumentácie</strong> podľa prílohy č. 3 vyhlášky č. 508/2009 Z. z.',
           'Pre zdvíhacie zariadenia skupiny A sa navyše vykonáva <strong style="color:#00e676">opakovaná úradná skúška</strong> oprávnenou právnickou osobou v lehotách podľa prílohy č. 7 (6 alebo 10 rokov podľa druhu zariadenia).',
         ],
       },
