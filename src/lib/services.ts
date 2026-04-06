@@ -266,6 +266,60 @@ export const services = {
       { icon: '🚜', text: 'Vysokozdvižný vozík', badge: 'OP 6m / OS 1r' },
       { icon: '🔗', text: 'Viazacie prostriedky', badge: 'kontrola pred použitím' },
     ],
+    extended: [
+      {
+        title: 'Aké zariadenia patria medzi VTZ zdvíhacie?',
+        paragraphs: [
+          'Zdvíhacie zariadenia sú rozdelené do skupín A, B a C podľa <strong style="color:#00e676">prílohy č. 1, II. časti vyhlášky č. 508/2009 Z. z.</strong> Do <strong style="color:#00e676">skupiny A</strong> (vysoká miera ohrozenia) patria žeriavy s nosnosťou nad 1 000 kg, pohyblivé pracovné plošiny s výškou zdvihu nad 1,5 m, osobné a nákladné výťahy, stavebné výťahy, pohyblivé schody a zariadenia technickej zábavnej činnosti.',
+          'Do <strong style="color:#00e676">skupiny B</strong> (vyššia miera ohrozenia) patria žeriavy do 1 000 kg, zdvíhacie ústrojenstá vysokozdvižných vozíkov, servisné zdvíhacie zariadenia (autozdviháky), zdvíhacie rampy, zdvíhacie plošiny a <strong style="color:#00e676">zvislé posuvné brány s motorovým pohonom s výškou zdvihu nad 2,7 m</strong>.',
+          'Do <strong style="color:#00e676">skupiny C</strong> patria viazacie prostriedky (laná, reťaze, popruhy, háky), ktoré nie sú trvalou súčasťou zdvíhacieho zariadenia.',
+        ],
+      },
+      {
+        title: 'Lehoty odborných prehliadok a skúšok zdvíhacích zariadení',
+        paragraphs: [
+          'Lehoty revízií zdvíhacích zariadení počas prevádzky určuje <strong style="color:#00e676">príloha č. 7 vyhlášky č. 508/2009 Z. z.</strong> Pre zariadenia skupiny A platia pevné lehoty, pre väčšinu zariadení skupiny B sa lehoty riadia podľa <strong style="color:#00e676">technických podmienok výrobcu (TPV)</strong>.',
+          'Pre <strong style="color:#00e676">žeriavy skupiny A</strong> (nad 1 000 kg) sú lehoty: odborná prehliadka <strong style="color:#00e676">každé 2 roky</strong> a odborná skúška <strong style="color:#00e676">každé 4 roky</strong>. Pre stavebné žeriavy, mobilné žeriavy, nakladacie žeriavy (hydraulické ruky) a žeriavy v agresívnom prostredí sú lehoty prísnejšie — OP <strong style="color:#00e676">každý rok</strong> a OS <strong style="color:#00e676">každé 2 roky</strong>.',
+          'Pre <strong style="color:#00e676">pohyblivé pracovné plošiny</strong> skupiny A: odborná prehliadka <strong style="color:#00e676">každý rok</strong>, odborná skúška <strong style="color:#00e676">každé 2 roky</strong> a opakovaná úradná skúška <strong style="color:#00e676">každých 10 rokov</strong>.',
+          'Pre <strong style="color:#00e676">vysokozdvižné vozíky</strong> a <strong style="color:#00e676">priemyselné brány</strong> (skupina B) sa lehoty riadia podľa technických podmienok výrobcu. V praxi to znamená lehoty stanovené v návode na obsluhu a údržbu od výrobcu zariadenia.',
+        ],
+      },
+      {
+        title: 'Revízia priemyselnej brány — kedy je povinná?',
+        paragraphs: [
+          'Nie každá brána je VTZ. Pod vyhradené technické zariadenia zdvíhacie spadá len <strong style="color:#00e676">zvislá posuvná brána s motorovým pohonom s výškou zdvihu nad 2,7 m</strong> (príloha č. 1, II. časť, sk. B, písm. f). To sú typicky sekcionálne a rolovacie brány v priemyselných halách, skladoch a logistických centrách.',
+          'Lehoty odborných prehliadok a skúšok pre brány nie sú vo vyhláške fixne určené — riadia sa <strong style="color:#00e676">technickými podmienkami výrobcu (TPV)</strong>. To znamená, že rozhodujúci je návod od výrobcu brány, kde sú uvedené intervaly údržby a kontrol. Revíziu vykonáva revízny technik s oprávnením na zdvíhacie zariadenia.',
+        ],
+      },
+      {
+        title: 'Revízia vysokozdvižného vozíka',
+        paragraphs: [
+          'Vysokozdvižné vozíky patria medzi <strong style="color:#00e676">VTZ zdvíhacie skupiny B</strong> (písm. b — zdvíhacie ústrojenstvo dopravného vozíka s motorovým pohonom). Lehoty odborných prehliadok a skúšok sa riadia <strong style="color:#00e676">technickými podmienkami výrobcu</strong>.',
+          'V praxi väčšina výrobcov vysokozdvižných vozíkov predpisuje odborné prehliadky v intervale <strong style="color:#00e676">každých 6 mesiacov</strong> a odborné skúšky <strong style="color:#00e676">každý rok</strong>. Tieto lehoty odporúčame dodržiavať — vysokozdvižný vozík pracuje s ťažkými bremenami vo výške a akákoľvek porucha zdvíhacieho mechanizmu môže mať vážne následky.',
+        ],
+      },
+      {
+        title: 'Kontrola viazacích prostriedkov',
+        paragraphs: [
+          'Viazacie prostriedky (laná, reťaze, popruhy, háky, strmeňe) patria do <strong style="color:#00e676">skupiny C</strong> zdvíhacích zariadení. Kontrolu vykonáva prevádzkovateľom určená osoba podľa technických podmienok výrobcu.',
+          'V praxi to znamená <strong style="color:#00e676">kontrolu pred každým použitím</strong> — vizuálna kontrola stavu lana, reťaze alebo popruhu, overenie čitateľnosti štítku s nosnosťou, kontrola hákov na deformácie a opotrebenie. Poškodené viazacie prostriedky sa musia okamžite vyradiť z prevádzky.',
+        ],
+      },
+      {
+        title: 'Čo obsahuje revízna správa zdvíhacieho zariadenia?',
+        paragraphs: [
+          'Po vykonaní revízie vám dodáme revíznu správu s <strong style="color:#00e676">okrúhlou pečiatkou revízneho technika</strong>. Správa obsahuje identifikáciu zariadenia (typ, výrobca, výrobné číslo, nosnosť), druh vykonanej kontroly (OP alebo OS), popis stavu zariadenia, zoznam zistených závad a celkový záver o <strong style="color:#00e676">spôsobilosti na ďalšiu bezpečnú prevádzku</strong>.',
+          'Pre zdvíhacie zariadenia skupiny A sa navyše vykonáva <strong style="color:#00e676">opakovaná úradná skúška</strong> oprávnenou právnickou osobou v lehotách podľa prílohy č. 7 (6 alebo 10 rokov podľa druhu zariadenia).',
+        ],
+      },
+      {
+        title: 'Čo hrozí bez platnej revízie zdvíhacieho zariadenia?',
+        paragraphs: [
+          'Zdvíhacie zariadenia patria medzi <strong style="color:#00e676">najrizikovejšie technické zariadenia</strong>. Pád bremena zo žeriavu, zlyhanie plošiny alebo porucha vysokozdvižného vozíka môžu mať fatálne následky. Preto sú požiadavky na ich revízie jedny z najprísnejších.',
+          'Prevádzkovanie zdvíhacieho zariadenia bez platnej revízie je porušenie <strong style="color:#00e676">§ 13 zákona č. 124/2006 Z. z.</strong> o BOZP. Inšpektorát práce môže uložiť <strong style="color:#00e676">pokutu až do výšky 100 000 €</strong>. V prípade pracovného úrazu na nezrevídovanom zariadení hrozí prevádzkovateľovi <strong style="color:#00e676">trestnoprávna zodpovednosť</strong>. Poisťovňa v takom prípade spravidla odmieta vyplatiť poistné plnenie.',
+        ],
+      },
+    ],
   },
 } as const;
 
