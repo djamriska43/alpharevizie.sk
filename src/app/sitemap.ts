@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/revizia-vysokozdvizneho-vozika`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/blog/vyhlaska-508-2009`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/blog/kontrola-inspektorat-prace`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/blog/revizia-priemyselnej-brany`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${base}/gdpr`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
   ];
 }

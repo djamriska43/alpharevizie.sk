@@ -12,7 +12,7 @@ const bgColorsStrong = { ele: 'rgba(0,212,255,0.2)', plyn: 'rgba(255,45,107,0.2)
 const procColors = ['#00d4ff', '#ff2d6b', '#00e676'];
 
 const whyItems = [
-  { icon: '🎓', title: 'Certifikovaní RT na všetky VTZ', desc: 'Revízni technici s oprávneniami na elektrické, plynové, tlakové aj zdvíhacie zariadenia. S dlhoročnými skúsenosťami v odbore.', c: 'ele' as const },
+  { icon: '🎓', svg: null, title: 'Certifikovaní RT na všetky VTZ', desc: 'Revízni technici s oprávneniami na elektrické, plynové, tlakové aj zdvíhacie zariadenia. S dlhoročnými skúsenosťami v odbore.', c: 'ele' as const },
   { icon: '📄', title: 'Revízna správa s pečiatkou RT', desc: 'Po vykonaní revízie vám do niekoľkých dní dodáme kompletnú revíznu správu s okrúhlou pečiatkou revízneho technika — pripravenú na predloženie kontrolným orgánom.', c: 'plyn' as const },
   { icon: '🇸🇰', title: 'Po celom Slovensku', desc: 'Sídlime v Martine, ale prichádzame za vami kamkoľvek na Slovensko. Bratislava, Žilina, Banská Bystrica, Košice — žiadny problém.', c: 'tlak' as const },
   { icon: '⚖️', title: 'Presne podľa legislatívy', desc: 'Všetko robíme striktne podľa zákona č. 124/2006 Z. z. o BOZP a vyhlášky č. 508/2009 Z. z. Žiadne skratky, žiadne kompromisy.', c: 'zdvih' as const },
@@ -38,7 +38,7 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4 animate-fadeUp" style={{animationDelay:'0.3s'}}>
             {svcKeys.map((key) => { const s = services[key]; return (
               <Link key={key} href={`/${s.slug}`} className={`bg-white/[0.05] border border-white/10 rounded-2xl p-6 no-underline cursor-pointer transition-all duration-300 relative overflow-hidden group hover:-translate-y-1 hover:border-transparent hover:bg-white/[0.08] glow-${key}`}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl mb-4" style={{background:bgColors[key]}}>{s.icon}</div>
+                <div className="w-[60px] h-[60px] rounded-full flex items-center justify-center text-2xl mb-4 border-2"  style={{background:bgColors[key],borderColor:neonColors[key]+'50',boxShadow:`0 0 20px ${bgColors[key]}`}}>{s.icon}</div>
                 <div className="font-bold text-base mb-1 text-white">{s.tag.split(' ')[0]}</div>
                 <div className="text-xs text-gray-400 leading-snug">{s.cardDesc.slice(0,50)}</div>
                 <div className="absolute bottom-0 left-0 right-0 h-[3px] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" style={{background:neonColors[key]}} />
@@ -70,7 +70,7 @@ export default function Home() {
             {svcKeys.map((key, i) => { const s = services[key]; return (
               <Reveal key={key} delay={i * 0.1}>
                 <Link href={`/${s.slug}`} className={`block bg-white/[0.04] rounded-2xl p-8 border border-white/[0.08] no-underline transition-all duration-400 relative overflow-hidden group cursor-pointer hover:-translate-y-1.5 hover:border-transparent glow-${key}`}>
-                  <div className="w-[52px] h-[52px] rounded-[14px] flex items-center justify-center text-xl mb-6" style={{background:bgColors[key]}}>{s.icon}</div>
+                  <div className="w-[64px] h-[64px] rounded-full flex items-center justify-center text-2xl mb-6 border-2" style={{background:bgColors[key],borderColor:neonColors[key]+'50',boxShadow:`0 0 20px ${bgColors[key]}`}}>{s.icon}</div>
                   <h3 className="text-lg font-bold text-white mb-3">{s.tag}</h3>
                   <p className="text-sm text-gray-400 leading-relaxed mb-5">{s.cardDesc}</p>
                   <div className="flex flex-col gap-1.5 mb-6">
@@ -101,7 +101,7 @@ export default function Home() {
             {whyItems.map((item, i) => (
               <Reveal key={i} delay={i * 0.1}>
                 <div className={`text-center p-8 rounded-2xl border border-white/[0.08] bg-white/[0.03] hover:-translate-y-1 transition-all group glow-icon-${item.c}`}>
-                  <div className="w-[72px] h-[72px] rounded-full flex items-center justify-center text-2xl mx-auto mb-5 transition-shadow duration-300 glow-target border" style={{background:bgColorsStrong[item.c],borderColor:neonColors[item.c]+'40'}}>{item.icon}</div>
+                  <div className="w-[72px] h-[72px] rounded-full flex items-center justify-center mx-auto mb-5 transition-shadow duration-300 glow-target border-2" style={{background:bgColorsStrong[item.c],borderColor:neonColors[item.c]+'50',boxShadow:`0 0 25px ${bgColorsStrong[item.c]}`}}>{item.svg || item.icon}</div>
                   <h3 className="font-bold mb-2 text-white">{item.title}</h3>
                   <p className="text-sm text-gray-400 leading-relaxed">{item.desc}</p>
                 </div>

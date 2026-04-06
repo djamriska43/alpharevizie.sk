@@ -23,8 +23,8 @@ const skills = [
   { label: 'Plynové VTZ', w: '100', color: '#ff2d6b' },
   { label: 'Tlakové VTZ', w: '100', color: '#8b5cf6' },
   { label: 'Zdvíhacie VTZ', w: '100', color: '#00e676' },
-  { label: 'BOZP & PO', w: '90', color: '#00d4ff' },
-  { label: 'Školenia & Inštruktáže', w: '85', color: '#ff2d6b' },
+  { label: 'BOZP & PO', w: '100', color: '#00d4ff' },
+  { label: 'Školenia & Inštruktáže', w: '100', color: '#ff2d6b' },
 ];
 
 export default function AboutPage() {

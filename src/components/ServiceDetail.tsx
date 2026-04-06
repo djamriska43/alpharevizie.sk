@@ -40,7 +40,7 @@ export default function ServiceDetail({ serviceKey }: { serviceKey: ServiceKey }
               {s.items.map((item, i) => (
                 <div key={i} className="flex items-center justify-between py-4 px-5 bg-white/[0.04] rounded-xl border border-white/[0.06] hover:border-white/[0.15] hover:translate-x-1 transition-all">
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-[10px] flex items-center justify-center text-sm" style={{background:`${s.color}15`}}>{item.icon}</div>
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center text-base border" style={{background:`${s.color}20`,borderColor:`${s.color}40`}}>{item.icon}</div>
                     <span className="text-sm font-semibold text-white">{item.text}</span>
                   </div>
                   <span className="font-mono text-[0.62rem] font-medium py-1 px-2.5 rounded-md bg-white/[0.06] text-gray-400">{item.badge}</span>

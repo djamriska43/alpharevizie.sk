@@ -38,10 +38,11 @@ export default function Article() {
               <div className="bg-white/[0.04] rounded-2xl p-6 mb-6 border border-white/[0.08]">
                 <div className="flex justify-between py-3 border-b border-white/5"><span>Byty a rodinné domy (bez nebezpečenstva)</span><span className="font-mono text-[#00d4ff] font-bold">5 rokov</span></div>
                 <div className="flex justify-between py-3 border-b border-white/5"><span>Kancelárie, obchody, školy</span><span className="font-mono text-[#00d4ff] font-bold">5 rokov</span></div>
-                <div className="flex justify-between py-3 border-b border-white/5"><span>Výrobné prevádzky</span><span className="font-mono text-[#ff2d6b] font-bold">2-3 roky</span></div>
+                <div className="flex justify-between py-3 border-b border-white/5"><span>Výrobné prevádzky (podľa prostredia)</span><span className="font-mono text-[#ff2d6b] font-bold">2-5 rokov</span></div>
                 <div className="flex justify-between py-3 border-b border-white/5"><span>Priestory s nebezpečenstvom výbuchu</span><span className="font-mono text-[#ff2d6b] font-bold">2 roky</span></div>
                 <div className="flex justify-between py-3"><span>Stavenisko, dočasné zariadenia</span><span className="font-mono text-[#ff2d6b] font-bold">6 mesiacov</span></div>
               </div>
+              <p className="text-xs text-gray-500 mt-2 mb-6">Lehota závisí od druhu objektu (príloha č. 8, tabuľka A) a vonkajších vplyvov (tabuľka B). Použije sa kratšia z oboch lehôt.</p>
 
               <h2 className="text-xl font-extrabold text-white mt-10 mb-4">Kedy potrebujete východiskovú revíziu?</h2>
               <p className="mb-6">Východisková revízia sa robí <strong className="text-white">pred prvým zapojením novej alebo rekonštruovanej elektroinštalácie</strong>. Ak ste stavali dom, robili rekonštrukciu bytu, menili elektrický rozvádzač alebo pridávali nové obvody — potrebujete východiskovú revíziu ešte predtým, než elektriku zapojíte.</p>

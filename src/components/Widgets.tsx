@@ -9,11 +9,11 @@ export function FloatingButton() {
     <div className="fixed bottom-8 right-8 z-[999] flex flex-col items-end gap-3 max-md:bottom-6 max-md:right-6">
       <div className={`flex flex-col gap-3 transition-all duration-300 ${open ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-4 pointer-events-none scale-90'}`}>
         <a href="tel:+421952352669" className="flex items-center gap-3 bg-[#1a1a1a] text-white py-3 px-5 rounded-2xl text-sm font-bold shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:-translate-x-1 transition-all border border-white/10 group">
-          <span className="w-10 h-10 rounded-full bg-[rgba(0,212,255,0.15)] border border-[rgba(0,212,255,0.3)] flex items-center justify-center text-base group-hover:shadow-[0_0_15px_rgba(0,212,255,0.3)] transition-shadow">☎</span>
+          <span className="w-12 h-12 rounded-full bg-[rgba(0,212,255,0.2)] border-2 border-[rgba(0,212,255,0.4)] flex items-center justify-center text-lg group-hover:shadow-[0_0_15px_rgba(0,212,255,0.3)] transition-shadow">☎</span>
           <span>Zavolať</span>
         </a>
         <Link href="/kontakt" onClick={() => setOpen(false)} className="flex items-center gap-3 bg-[#1a1a1a] text-white py-3 px-5 rounded-2xl text-sm font-bold shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:-translate-x-1 transition-all no-underline border border-white/10 group">
-          <span className="w-10 h-10 rounded-full bg-[rgba(255,45,107,0.15)] border border-[rgba(255,45,107,0.3)] flex items-center justify-center text-base group-hover:shadow-[0_0_15px_rgba(255,45,107,0.3)] transition-shadow">✉</span>
+          <span className="w-12 h-12 rounded-full bg-[rgba(255,45,107,0.2)] border-2 border-[rgba(255,45,107,0.4)] flex items-center justify-center text-lg group-hover:shadow-[0_0_15px_rgba(255,45,107,0.3)] transition-shadow">✉</span>
           <span>Napíšte nám</span>
         </Link>
       </div>

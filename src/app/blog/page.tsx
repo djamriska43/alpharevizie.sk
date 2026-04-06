@@ -17,6 +17,7 @@ const posts = [
   {slug:'revizia-vysokozdvizneho-vozika',icon:'🏗️',tag:'Zdvíhacie',color:'#00e676',bg:'rgba(0,230,118,0.12)',title:'Revízia vysokozdvižného vozíka — lehoty a povinnosti',desc:'Vysokozdvižné vozíky patria medzi VTZ zdvíhacie. Aké sú lehoty odborných prehliadok a skúšok?',date:'28. februára 2026'},
   {slug:'vyhlaska-508-2009',icon:'⚖️',tag:'Legislatíva',color:'#fff',bg:'rgba(255,255,255,0.05)',title:'Vyhláška 508/2009 Z. z. — čo musí vedieť každý prevádzkovateľ',desc:'Kľúčový predpis pre VTZ na Slovensku. Rozdelenie zariadení, lehoty revízií a vaše zákonné povinnosti.',date:'20. februára 2026'},
   {slug:'kontrola-inspektorat-prace',icon:'📋',tag:'Praktické',color:'#fff',bg:'rgba(255,255,255,0.05)',title:'Ako sa pripraviť na kontrolu z inšpektorátu práce?',desc:'Kontrola z IP nemusí byť stresujúca. Tu je zoznam dokumentov a vecí, ktoré musíte mať pripravené.',date:'12. februára 2026'},
+  {slug:'revizia-priemyselnej-brany',icon:'🚪',tag:'Zdvíhacie',color:'#00e676',bg:'rgba(0,230,118,0.12)',title:'Revízia priemyselnej brány — kedy je povinná?',desc:'Sekcionálne a rolovacie brány s motorovým pohonom nad 2,7 m spadajú pod VTZ. Aké sú vaše povinnosti?',date:'6. apríla 2026'},
 ];
 
 export default function BlogPage() {
