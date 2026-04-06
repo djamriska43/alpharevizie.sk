@@ -5,10 +5,10 @@ import { BreadcrumbJsonLd, FAQPageJsonLd } from '@/components/JsonLd';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Časté otázky o revíziách VTZ — Alpha Revízie',
-  description: 'Odpovede na najčastejšie otázky o revíziách elektrických, plynových, tlakových a zdvíhacích zariadení. Lehoty, povinnosti, pokuty.',
+  title: 'Časté otázky o revíziách VTZ — Alpha Revízie | FAQ',
+  description: 'Ako často treba revíziu elektrickej inštalácie? Koľko stojí revízia kotla? Aká pokuta hrozí bez revízie? Odpovede na najčastejšie otázky o VTZ.',
   alternates: { canonical: '/faq' },
-  openGraph: { title: 'F.A.Q. — Alpha Revízie', description: 'Odpovede na otázky o revíziách VTZ.', url: 'https://alpharevizie.sk/faq', locale: 'sk_SK', type: 'website' },
+  openGraph: { title: 'Časté otázky o revíziách VTZ — Alpha Revízie', description: 'Odpovede na najčastejšie otázky o revíziách elektrických, plynových, tlakových a zdvíhacích zariadení.', url: 'https://alpharevizie.sk/faq', locale: 'sk_SK', type: 'website' },
 };
 
 const faqs = [

@@ -5,9 +5,9 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Kontakt — Alpha Revízie | Objednajte si revíziu VTZ',
-  description: 'Kontaktujte nás pre revízie vyhradených technických zariadení. Telefón +421 952 352 669, e-mail office@alpharevizie.sk. Pôsobíme po celom Slovensku.',
+  description: 'Objednajte si revíziu VTZ ✓ Telefón +421 952 352 669 ✓ E-mail office@alpharevizie.sk ✓ Odpovieme do 24 hodín. Elektrické, plynové, tlakové, zdvíhacie zariadenia. Celé Slovensko.',
   alternates: { canonical: '/kontakt' },
-  openGraph: { title: 'Kontakt — Alpha Revízie', description: 'Objednajte si revíziu VTZ.', url: 'https://alpharevizie.sk/kontakt', locale: 'sk_SK', type: 'website' },
+  openGraph: { title: 'Kontakt — Alpha Revízie | Objednajte si revíziu VTZ', description: 'Zavolajte +421 952 352 669 alebo napíšte na office@alpharevizie.sk. Revízie VTZ po celom Slovensku.', url: 'https://alpharevizie.sk/kontakt', locale: 'sk_SK', type: 'website' },
 };
 
 const contactItems = [

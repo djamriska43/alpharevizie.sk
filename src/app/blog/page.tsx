@@ -4,10 +4,10 @@ import { BreadcrumbJsonLd } from '@/components/JsonLd';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog — Alpha Revízie | Odborné články o revíziách VTZ',
-  description: 'Praktické informácie o revíziách vyhradených technických zariadení. Kedy treba revíziu kotla, elektriky, kompresora alebo výťahu?',
+  title: 'Blog o revíziách VTZ — Alpha Revízie | Lehoty, povinnosti, zákony',
+  description: 'Kedy treba revíziu kotla? Aké sú lehoty revízie elektrickej inštalácie? Čo kontroluje inšpektorát práce? Praktické články o revíziách VTZ zrozumiteľnou rečou.',
   alternates: { canonical: '/blog' },
-  openGraph: { title: 'Blog — Alpha Revízie', description: 'Odborné články o revíziách VTZ.', url: 'https://alpharevizie.sk/blog', locale: 'sk_SK', type: 'website' },
+  openGraph: { title: 'Blog o revíziách VTZ — Alpha Revízie', description: 'Praktické články o revíziách technických zariadení. Lehoty, povinnosti, legislatíva.', url: 'https://alpharevizie.sk/blog', locale: 'sk_SK', type: 'website' },
 };
 
 const posts = [

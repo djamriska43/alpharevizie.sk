@@ -5,10 +5,10 @@ import { BreadcrumbJsonLd } from '@/components/JsonLd';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'O nás — Alpha Revízie | Revízie VTZ na celom Slovensku',
-  description: 'Alpha Safety s.r.o. so sídlom v Martine. Certifikovaní revízni technici s oprávneniami na všetky štyri druhy VTZ.',
+  title: 'O nás — Alpha Revízie | Certifikovaní revízni technici VTZ',
+  description: 'Alpha Safety s.r.o., Martin ✓ Certifikovaní RT na všetky 4 druhy VTZ ✓ Elektrické, plynové, tlakové, zdvíhacie ✓ 500+ revízií ✓ Pôsobíme po celom Slovensku.',
   alternates: { canonical: '/o-nas' },
-  openGraph: { title: 'O nás — Alpha Revízie', description: 'Certifikovaní revízni technici na všetky VTZ.', url: 'https://alpharevizie.sk/o-nas', locale: 'sk_SK', type: 'website' },
+  openGraph: { title: 'O nás — Alpha Revízie | Certifikovaní revízni technici', description: 'Alpha Safety s.r.o. — certifikovaní revízni technici s oprávneniami na všetky štyri druhy VTZ. Martin, celé Slovensko.', url: 'https://alpharevizie.sk/o-nas', locale: 'sk_SK', type: 'website' },
 };
 
 const neons = ['#00d4ff','#ff2d6b','#8b5cf6','#00e676'];
