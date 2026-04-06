@@ -1,11 +1,14 @@
+import { BreadcrumbJsonLd, BlogPostingJsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { CTASection } from '@/components/Widgets';
 import { Metadata } from 'next';
-export const metadata: Metadata = { title: 'Ako sa pripraviť na kontrolu z inšpektorátu práce? | Alpha Revízie', description: 'Kontrola z inšpektorátu práce nemusí byť stresujúca. Kompletný zoznam dokumentov a vecí, ktoré musíte mať pripravené v oblasti VTZ a BOZP.'   alternates: { canonical: '/blog/kontrola-inspektorat-prace' },
+export const metadata: Metadata = { title: 'Ako sa pripraviť na kontrolu z inšpektorátu práce? | Alpha Revízie', description: 'Kontrola z inšpektorátu práce nemusí byť stresujúca. Kompletný zoznam dokumentov a vecí, ktoré musíte mať pripravené v oblasti VTZ a BOZP.', alternates: { canonical: '/blog/kontrola-inspektorat-prace' },
 };
 export default function Article() {
   return (<>
+      <BreadcrumbJsonLd items={[{name:"Domov",url:"https://alpharevizie.sk"},{name:"Blog",url:"https://alpharevizie.sk/blog"},{name:"Kontrola z inšpektorátu práce",url:"https://alpharevizie.sk/blog/kontrola-inspektorat-prace"}]} />
+      <BlogPostingJsonLd title="Ako sa pripraviť na kontrolu z inšpektorátu práce?" description="Kontrola z inšpektorátu práce nemusí byť stresujúca." date="2026-02-12" url="https://alpharevizie.sk/blog/kontrola-inspektorat-prace" />
     <section className="bg-[#111] pt-36 pb-16 px-8"><div className="max-w-[800px] mx-auto"><Reveal>
       <Link href="/blog" className="text-gray-400 text-sm font-medium no-underline hover:underline mb-6 inline-block">← Späť na blog</Link>
       <span className="inline-flex font-mono text-[0.6rem] uppercase tracking-widest py-1 px-2.5 rounded font-semibold mb-4 bg-white/[0.06] text-gray-300">Praktické</span>

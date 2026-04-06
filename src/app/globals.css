@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 html { scroll-behavior: smooth; }
-body { font-family: 'Outfit', sans-serif; -webkit-font-smoothing: antialiased; background: #111; color: #fff; }
+body { font-family: var(--font-outfit), 'Outfit', sans-serif; -webkit-font-smoothing: antialiased; background: #111; color: #fff; }
 
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #111; }

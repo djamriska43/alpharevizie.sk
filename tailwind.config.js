@@ -10,8 +10,8 @@ module.exports = {
         zdvih: '#00e676',
       },
       fontFamily: {
-        sans: ['Outfit', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        sans: ['var(--font-outfit)', 'Outfit', 'sans-serif'],
+        mono: ['var(--font-mono)', 'JetBrains Mono', 'monospace'],
       },
       keyframes: {
         fadeUp: {

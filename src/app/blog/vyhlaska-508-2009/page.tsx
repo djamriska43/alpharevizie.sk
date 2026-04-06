@@ -1,11 +1,14 @@
+import { BreadcrumbJsonLd, BlogPostingJsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { CTASection } from '@/components/Widgets';
 import { Metadata } from 'next';
-export const metadata: Metadata = { title: 'Vyhláška 508/2009 Z. z. — čo musí vedieť každý prevádzkovateľ | Alpha Revízie', description: 'Kompletný prehľad vyhlášky 508/2009 Z. z. o VTZ. Rozdelenie zariadení do skupín A, B, C, lehoty revízií a povinnosti prevádzkovateľa.'   alternates: { canonical: '/blog/vyhlaska-508-2009' },
+export const metadata: Metadata = { title: 'Vyhláška 508/2009 Z. z. — čo musí vedieť každý prevádzkovateľ | Alpha Revízie', description: 'Kompletný prehľad vyhlášky 508/2009 Z. z. o VTZ. Rozdelenie zariadení do skupín A, B, C, lehoty revízií a povinnosti prevádzkovateľa.', alternates: { canonical: '/blog/vyhlaska-508-2009' },
 };
 export default function Article() {
   return (<>
+      <BreadcrumbJsonLd items={[{name:"Domov",url:"https://alpharevizie.sk"},{name:"Blog",url:"https://alpharevizie.sk/blog"},{name:"Vyhláška 508/2009 Z. z.",url:"https://alpharevizie.sk/blog/vyhlaska-508-2009"}]} />
+      <BlogPostingJsonLd title="Vyhláška 508/2009 Z. z. — čo musí vedieť každý prevádzkovateľ" description="Kompletný prehľad vyhlášky 508/2009 Z. z. o VTZ." date="2026-02-20" url="https://alpharevizie.sk/blog/vyhlaska-508-2009" />
     <section className="bg-[#111] pt-36 pb-16 px-8"><div className="max-w-[800px] mx-auto"><Reveal>
       <Link href="/blog" className="text-gray-400 text-sm font-medium no-underline hover:underline mb-6 inline-block">← Späť na blog</Link>
       <span className="inline-flex font-mono text-[0.6rem] uppercase tracking-widest py-1 px-2.5 rounded font-semibold mb-4 bg-white/[0.06] text-gray-300">Legislatíva</span>

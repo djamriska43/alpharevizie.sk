@@ -1,11 +1,14 @@
+import { BreadcrumbJsonLd, BlogPostingJsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { CTASection } from '@/components/Widgets';
 import { Metadata } from 'next';
-export const metadata: Metadata = { title: 'Revízia plynového kotla — čo zahŕňa a prečo ju neodkladať | Alpha Revízie', description: 'Revízia plynového kotla je povinná každé 3 roky. Kontrola každý rok. Čo presne kontroluje technik a prečo to neodsúvať?'   alternates: { canonical: '/blog/revizia-plynoveho-kotla' },
+export const metadata: Metadata = { title: 'Revízia plynového kotla — čo zahŕňa a prečo ju neodkladať | Alpha Revízie', description: 'Revízia plynového kotla je povinná každé 3 roky. Kontrola každý rok. Čo presne kontroluje technik a prečo to neodsúvať?', alternates: { canonical: '/blog/revizia-plynoveho-kotla' },
 };
 export default function Article() {
   return (<>
+      <BreadcrumbJsonLd items={[{name:"Domov",url:"https://alpharevizie.sk"},{name:"Blog",url:"https://alpharevizie.sk/blog"},{name:"Revízia plynového kotla",url:"https://alpharevizie.sk/blog/revizia-plynoveho-kotla"}]} />
+      <BlogPostingJsonLd title="Revízia plynového kotla — čo zahŕňa a prečo ju neodkladať?" description="Revízia plynového kotla je povinná každé 3 roky." date="2026-03-10" url="https://alpharevizie.sk/blog/revizia-plynoveho-kotla" />
     <section className="bg-[#111] pt-36 pb-16 px-8"><div className="max-w-[800px] mx-auto"><Reveal>
       <Link href="/blog" className="text-[#ff2d6b] text-sm font-medium no-underline hover:underline mb-6 inline-block">← Späť na blog</Link>
       <span className="inline-flex font-mono text-[0.6rem] uppercase tracking-widest py-1 px-2.5 rounded font-semibold mb-4 bg-[rgba(255,45,107,0.12)] text-[#ff2d6b]">Plynové zariadenia</span>

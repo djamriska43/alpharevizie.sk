@@ -1,11 +1,14 @@
+import { BreadcrumbJsonLd, BlogPostingJsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { CTASection } from '@/components/Widgets';
 import { Metadata } from 'next';
-export const metadata: Metadata = { title: 'Revízia vysokozdvižného vozíka — lehoty a povinnosti | Alpha Revízie', description: 'Vysokozdvižné vozíky patria medzi VTZ zdvíhacie. Odborná prehliadka každých 6 mesiacov, skúška každý rok. Kompletný prehľad povinností.'   alternates: { canonical: '/blog/revizia-vysokozdvizneho-vozika' },
+export const metadata: Metadata = { title: 'Revízia vysokozdvižného vozíka — lehoty a povinnosti | Alpha Revízie', description: 'Vysokozdvižné vozíky patria medzi VTZ zdvíhacie. Odborná prehliadka každých 6 mesiacov, skúška každý rok. Kompletný prehľad povinností.', alternates: { canonical: '/blog/revizia-vysokozdvizneho-vozika' },
 };
 export default function Article() {
   return (<>
+      <BreadcrumbJsonLd items={[{name:"Domov",url:"https://alpharevizie.sk"},{name:"Blog",url:"https://alpharevizie.sk/blog"},{name:"Revízia VZV",url:"https://alpharevizie.sk/blog/revizia-vysokozdvizneho-vozika"}]} />
+      <BlogPostingJsonLd title="Revízia vysokozdvižného vozíka — lehoty a povinnosti" description="Vysokozdvižné vozíky patria medzi VTZ zdvíhacie." date="2026-02-28" url="https://alpharevizie.sk/blog/revizia-vysokozdvizneho-vozika" />
     <section className="bg-[#111] pt-36 pb-16 px-8"><div className="max-w-[800px] mx-auto"><Reveal>
       <Link href="/blog" className="text-[#00e676] text-sm font-medium no-underline hover:underline mb-6 inline-block">← Späť na blog</Link>
       <span className="inline-flex font-mono text-[0.6rem] uppercase tracking-widest py-1 px-2.5 rounded font-semibold mb-4 bg-[rgba(0,230,118,0.12)] text-[#00e676]">Zdvíhacie zariadenia</span>

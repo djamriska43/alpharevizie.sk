@@ -1,11 +1,14 @@
+import { BreadcrumbJsonLd, BlogPostingJsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { CTASection } from '@/components/Widgets';
 import { Metadata } from 'next';
-export const metadata: Metadata = { title: 'Kompresor v dielni — potrebuje revíziu? | Alpha Revízie', description: 'Máte kompresor s tlakovou nádobou? Spadá pod VTZ a potrebuje pravidelnú revíziu. Aké sú lehoty a povinnosti prevádzkovateľa?'   alternates: { canonical: '/blog/revizia-kompresora' },
+export const metadata: Metadata = { title: 'Kompresor v dielni — potrebuje revíziu? | Alpha Revízie', description: 'Máte kompresor s tlakovou nádobou? Spadá pod VTZ a potrebuje pravidelnú revíziu. Aké sú lehoty a povinnosti prevádzkovateľa?', alternates: { canonical: '/blog/revizia-kompresora' },
 };
 export default function Article() {
   return (<>
+      <BreadcrumbJsonLd items={[{name:"Domov",url:"https://alpharevizie.sk"},{name:"Blog",url:"https://alpharevizie.sk/blog"},{name:"Kompresor v dielni",url:"https://alpharevizie.sk/blog/revizia-kompresora"}]} />
+      <BlogPostingJsonLd title="Kompresor v dielni — potrebuje revíziu?" description="Máte kompresor s tlakovou nádobou? Spadá pod VTZ." date="2026-03-05" url="https://alpharevizie.sk/blog/revizia-kompresora" />
     <section className="bg-[#111] pt-36 pb-16 px-8"><div className="max-w-[800px] mx-auto"><Reveal>
       <Link href="/blog" className="text-[#8b5cf6] text-sm font-medium no-underline hover:underline mb-6 inline-block">← Späť na blog</Link>
       <span className="inline-flex font-mono text-[0.6rem] uppercase tracking-widest py-1 px-2.5 rounded font-semibold mb-4 bg-[rgba(139,92,246,0.12)] text-[#8b5cf6]">Tlakové zariadenia</span>
