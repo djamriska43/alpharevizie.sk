@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Ochrana osobných údajov — Alpha Revízie',
+  alternates: { canonical: '/gdpr' },
   description: 'Zásady ochrany osobných údajov spoločnosti Alpha Safety s.r.o. podľa zákona č. 18/2018 Z. z. a nariadenia GDPR.',
 };
 

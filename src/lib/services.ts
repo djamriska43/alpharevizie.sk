@@ -35,7 +35,7 @@ export const services = {
     tag: 'Plynové zariadenia',
     icon: '🔥',
     title: 'Revízia plynového kotla, rozvodov a spotrebičov',
-    desc: 'Odborné prehliadky a odborné skúšky plynových zariadení. Kotly, rozvody, komíny, regulačné stanice — všetko podľa vyhlášky č. 508/2009 Z. z.',
+    desc: 'Odborné prehliadky a odborné skúšky plynových zariadení. Kotly, rozvody, komíny, regulačné stanice — všetko podľa vyhlášky č. 508/2009 Z. z. Platí pre zariadenia spadajúce do skupiny A, B alebo C podľa prílohy č. 1.',
     cardDesc: 'Revízie plynových kotlov, rozvodov, spotrebičov a komínov. Aby ste vedeli, že je u vás všetko bezpečné.',
     cardItems: ['Revízia plynového kotla', 'Revízia plynových rozvodov', 'Revízia plynových spotrebičov', 'Kontrola komína a dymovodu', 'Odborná prehliadka kotolne'],
     sectionTitle: 'Prečo je revízia plynu taká dôležitá?',

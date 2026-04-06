@@ -2,7 +2,8 @@ import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { CTASection } from '@/components/Widgets';
 import { Metadata } from 'next';
-export const metadata: Metadata = { title: 'Vyhláška 508/2009 Z. z. — čo musí vedieť každý prevádzkovateľ | Alpha Revízie', description: 'Kompletný prehľad vyhlášky 508/2009 Z. z. o VTZ. Rozdelenie zariadení do skupín A, B, C, lehoty revízií a povinnosti prevádzkovateľa.' };
+export const metadata: Metadata = { title: 'Vyhláška 508/2009 Z. z. — čo musí vedieť každý prevádzkovateľ | Alpha Revízie', description: 'Kompletný prehľad vyhlášky 508/2009 Z. z. o VTZ. Rozdelenie zariadení do skupín A, B, C, lehoty revízií a povinnosti prevádzkovateľa.'   alternates: { canonical: '/blog/vyhlaska-508-2009' },
+};
 export default function Article() {
   return (<>
     <section className="bg-[#111] pt-36 pb-16 px-8"><div className="max-w-[800px] mx-auto"><Reveal>
@@ -24,7 +25,7 @@ export default function Article() {
       <h2 className="text-xl font-extrabold text-white mt-10 mb-4">Povinnosti prevádzkovateľa</h2>
       <p className="mb-6">Ako prevádzkovateľ ste povinný zabezpečiť odborné prehliadky a odborné skúšky VTZ v lehotách stanovených vyhláškou. Musíte viesť evidenciu zariadení, uchovávať revízne správy a sprístupniť ich kontrolným orgánom. Zariadenia musia byť prevádzkované len osobami s potrebnou odbornou spôsobilosťou.</p>
       <h2 className="text-xl font-extrabold text-white mt-10 mb-4">Kto môže vykonávať revízie?</h2>
-      <p className="mb-6">Revízie VTZ môže vykonávať len <strong className="text-white">revízny technik s platným osvedčením</strong> vydaným Technickou inšpekciou a.s. alebo oprávnenou právnickou osobou. Revízny technik musí mať osvedčenie presne na ten druh a skupinu zariadenia, ktoré reviduje.</p>
+      <p className="mb-6">Revízie VTZ môže vykonávať len <strong className="text-white">revízny technik s platným osvedčením</strong> vydaným oprávnenou právnickou osobou (napr. Technická inšpekcia, a.s.). Revízny technik musí mať osvedčenie presne na ten druh a skupinu zariadenia, ktoré reviduje.</p>
       <div className="bg-white/[0.04] border border-white/[0.08] rounded-2xl p-6 mt-10">
         <h3 className="text-lg font-bold text-white mb-2">Potrebujete pomoc s revíziami VTZ?</h3>
         <p className="text-sm text-gray-400">Naši revízni technici majú oprávnenia na všetky štyri druhy VTZ. Zavolajte na <a href="tel:+421952352669" className="text-[#00d4ff] font-bold no-underline">+421 952 352 669</a>.</p>

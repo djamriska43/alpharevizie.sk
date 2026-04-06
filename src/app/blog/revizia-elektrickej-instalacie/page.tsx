@@ -1,3 +1,4 @@
+import { BreadcrumbJsonLd, BlogPostingJsonLd } from '@/components/JsonLd';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { CTASection } from '@/components/Widgets';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function Article() {
+  const jsonLd = <><BreadcrumbJsonLd items={[{name:"Domov",url:"https://alpharevizie.sk"},{name:"Blog",url:"https://alpharevizie.sk/blog"},{name:"Revízia elektrickej inštalácie",url:"https://alpharevizie.sk/blog/revizia-elektrickej-instalacie"}]} /><BlogPostingJsonLd title="Kedy potrebujete revíziu elektrickej inštalácie?" description="Revízia elektrickej inštalácie v byte, dome aj firme." date="2026-03-15" url="https://alpharevizie.sk/blog/revizia-elektrickej-instalacie" /></>;
   return (
     <>
       <section className="bg-[#111] pt-36 pb-16 px-8">

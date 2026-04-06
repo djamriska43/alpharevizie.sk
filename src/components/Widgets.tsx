@@ -6,18 +6,20 @@ import Link from 'next/link';
 export function FloatingButton() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="fixed bottom-8 right-8 z-[999] flex flex-col items-end gap-2.5 max-md:bottom-6 max-md:right-6">
-      <div className={`flex flex-col gap-2 transition-all duration-300 ${open ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2.5 pointer-events-none scale-95'}`}>
-        <a href="tel:+421952352669" className="flex items-center gap-2.5 bg-[#1a1a1a] text-white py-2.5 px-4 rounded-full text-sm font-semibold shadow-lg hover:-translate-x-1 transition-all border border-white/10">
-          <span className="w-8 h-8 rounded-full bg-[rgba(0,212,255,0.12)] flex items-center justify-center text-sm">☎</span>Zavolať
+    <div className="fixed bottom-8 right-8 z-[999] flex flex-col items-end gap-3 max-md:bottom-6 max-md:right-6">
+      <div className={`flex flex-col gap-3 transition-all duration-300 ${open ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-4 pointer-events-none scale-90'}`}>
+        <a href="tel:+421952352669" className="flex items-center gap-3 bg-[#1a1a1a] text-white py-3 px-5 rounded-2xl text-sm font-bold shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:-translate-x-1 transition-all border border-white/10 group">
+          <span className="w-10 h-10 rounded-full bg-[rgba(0,212,255,0.15)] border border-[rgba(0,212,255,0.3)] flex items-center justify-center text-base group-hover:shadow-[0_0_15px_rgba(0,212,255,0.3)] transition-shadow">☎</span>
+          <span>Zavolať</span>
         </a>
-        <Link href="/kontakt" onClick={() => setOpen(false)} className="flex items-center gap-2.5 bg-[#1a1a1a] text-white py-2.5 px-4 rounded-full text-sm font-semibold shadow-lg hover:-translate-x-1 transition-all no-underline border border-white/10">
-          <span className="w-8 h-8 rounded-full bg-[rgba(255,45,107,0.12)] flex items-center justify-center text-sm">📋</span>Napíšte nám
+        <Link href="/kontakt" onClick={() => setOpen(false)} className="flex items-center gap-3 bg-[#1a1a1a] text-white py-3 px-5 rounded-2xl text-sm font-bold shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:-translate-x-1 transition-all no-underline border border-white/10 group">
+          <span className="w-10 h-10 rounded-full bg-[rgba(255,45,107,0.15)] border border-[rgba(255,45,107,0.3)] flex items-center justify-center text-base group-hover:shadow-[0_0_15px_rgba(255,45,107,0.3)] transition-shadow">✉</span>
+          <span>Napíšte nám</span>
         </Link>
       </div>
-      <button onClick={() => setOpen(!open)} className={`w-[60px] h-[60px] rounded-full bg-[#00d4ff] text-black flex items-center justify-center text-2xl cursor-pointer transition-all shadow-[0_4px_20px_rgba(0,212,255,0.3)] border-none hover:shadow-[0_8px_30px_rgba(0,212,255,0.4)] max-md:w-[54px] max-md:h-[54px] ${open ? 'rotate-45 !bg-gray-800 !text-white !shadow-none' : ''}`}>
-        <Image src="/logo-dark.svg" alt="A" width={28} height={28} className={`w-7 h-auto invert ${open ? 'hidden' : ''}`} />
-        {open && <span className="text-xl">+</span>}
+      <button onClick={() => setOpen(!open)} className={`w-[62px] h-[62px] rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 border-none max-md:w-[56px] max-md:h-[56px] ${open ? 'bg-[#222] rotate-[135deg] shadow-[0_4px_20px_rgba(0,0,0,0.3)]' : 'bg-[#00d4ff] shadow-[0_4px_20px_rgba(0,212,255,0.3)] hover:shadow-[0_8px_30px_rgba(0,212,255,0.5)] animate-[fabPulse_3s_ease-in-out_infinite]'}`}>
+        {!open && <Image src="/logo-dark.svg" alt="A" width={30} height={30} className="w-[30px] h-auto" />}
+        {open && <span className="text-white text-2xl font-light">+</span>}
       </button>
     </div>
   );
@@ -25,30 +27,24 @@ export function FloatingButton() {
 
 export function CookieConsent() {
   const [show, setShow] = useState(false);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       if (typeof window !== 'undefined' && !localStorage.getItem('cookieConsent')) setShow(true);
     }, 1500);
     return () => clearTimeout(timer);
   }, []);
-
   const accept = () => { localStorage.setItem('cookieConsent', 'accepted'); setShow(false); };
   const reject = () => { localStorage.setItem('cookieConsent', 'rejected'); setShow(false); };
-
   if (!show) return null;
   return (
     <div className="fixed bottom-0 left-0 right-0 z-[9999] animate-[cookieSlide_0.5s_ease]">
       <div className="mx-4 mb-4 md:mx-8 md:mb-6 rounded-2xl p-[1px] bg-gradient-to-r from-[#00d4ff] via-[#ff2d6b] via-[#8b5cf6] to-[#00e676] bg-[length:300%_300%] animate-gradientBorder">
         <div className="bg-[#0a0a0a] rounded-2xl py-5 px-6 md:px-8">
           <div className="max-w-[1200px] mx-auto flex items-center justify-between gap-6 flex-wrap max-md:flex-col max-md:text-center">
-            <div className="flex items-start gap-4 max-md:flex-col max-md:items-center">
-              <span className="text-2xl shrink-0">🍪</span>
-              <p className="text-sm text-gray-300 leading-6 max-w-[600px]">
-                Táto stránka používa cookies na zabezpečenie správneho fungovania a analytiku.
-                Viac v <Link href="/gdpr" className="text-[#00d4ff] no-underline hover:underline">zásadách ochrany osobných údajov</Link>.
-              </p>
-            </div>
+            <p className="text-sm text-gray-300 leading-6 max-w-[600px]">
+              Táto stránka používa cookies na zabezpečenie správneho fungovania a analytiku.
+              Viac v <Link href="/gdpr" className="text-[#00d4ff] no-underline hover:underline">zásadách ochrany osobných údajov</Link>.
+            </p>
             <div className="flex gap-3 shrink-0 max-md:justify-center">
               <button onClick={accept} className="bg-[#00d4ff] text-black border-none py-3 px-6 rounded-full font-bold text-sm cursor-pointer font-sans hover:-translate-y-px hover:shadow-[0_4px_15px_rgba(0,212,255,0.3)] transition-all">Súhlasím</button>
               <button onClick={reject} className="bg-transparent text-gray-400 border border-white/15 py-3 px-6 rounded-full font-semibold text-sm cursor-pointer font-sans hover:border-white/30 hover:text-white transition-all">Len nevyhnutné</button>

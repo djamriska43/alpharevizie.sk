@@ -2,7 +2,8 @@ import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { CTASection } from '@/components/Widgets';
 import { Metadata } from 'next';
-export const metadata: Metadata = { title: 'Revízia vysokozdvižného vozíka — lehoty a povinnosti | Alpha Revízie', description: 'Vysokozdvižné vozíky patria medzi VTZ zdvíhacie. Odborná prehliadka každých 6 mesiacov, skúška každý rok. Kompletný prehľad povinností.' };
+export const metadata: Metadata = { title: 'Revízia vysokozdvižného vozíka — lehoty a povinnosti | Alpha Revízie', description: 'Vysokozdvižné vozíky patria medzi VTZ zdvíhacie. Odborná prehliadka každých 6 mesiacov, skúška každý rok. Kompletný prehľad povinností.'   alternates: { canonical: '/blog/revizia-vysokozdvizneho-vozika' },
+};
 export default function Article() {
   return (<>
     <section className="bg-[#111] pt-36 pb-16 px-8"><div className="max-w-[800px] mx-auto"><Reveal>

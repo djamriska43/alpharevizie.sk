@@ -2,7 +2,8 @@ import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { CTASection } from '@/components/Widgets';
 import { Metadata } from 'next';
-export const metadata: Metadata = { title: 'Ako sa pripraviť na kontrolu z inšpektorátu práce? | Alpha Revízie', description: 'Kontrola z inšpektorátu práce nemusí byť stresujúca. Kompletný zoznam dokumentov a vecí, ktoré musíte mať pripravené v oblasti VTZ a BOZP.' };
+export const metadata: Metadata = { title: 'Ako sa pripraviť na kontrolu z inšpektorátu práce? | Alpha Revízie', description: 'Kontrola z inšpektorátu práce nemusí byť stresujúca. Kompletný zoznam dokumentov a vecí, ktoré musíte mať pripravené v oblasti VTZ a BOZP.'   alternates: { canonical: '/blog/kontrola-inspektorat-prace' },
+};
 export default function Article() {
   return (<>
     <section className="bg-[#111] pt-36 pb-16 px-8"><div className="max-w-[800px] mx-auto"><Reveal>

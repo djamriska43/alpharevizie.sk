@@ -2,7 +2,8 @@ import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { CTASection } from '@/components/Widgets';
 import { Metadata } from 'next';
-export const metadata: Metadata = { title: 'Revízia plynového kotla — čo zahŕňa a prečo ju neodkladať | Alpha Revízie', description: 'Revízia plynového kotla je povinná každé 3 roky. Kontrola každý rok. Čo presne kontroluje technik a prečo to neodsúvať?' };
+export const metadata: Metadata = { title: 'Revízia plynového kotla — čo zahŕňa a prečo ju neodkladať | Alpha Revízie', description: 'Revízia plynového kotla je povinná každé 3 roky. Kontrola každý rok. Čo presne kontroluje technik a prečo to neodsúvať?'   alternates: { canonical: '/blog/revizia-plynoveho-kotla' },
+};
 export default function Article() {
   return (<>
     <section className="bg-[#111] pt-36 pb-16 px-8"><div className="max-w-[800px] mx-auto"><Reveal>

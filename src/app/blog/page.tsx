@@ -1,8 +1,14 @@
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
+import { BreadcrumbJsonLd } from '@/components/JsonLd';
 import { Metadata } from 'next';
 
-export const metadata: Metadata = { title: 'Blog — Alpha Revízie | Odborné články o revíziách VTZ', description: 'Praktické informácie o revíziách vyhradených technických zariadení. Kedy treba revíziu kotla, elektriky, kompresora alebo výťahu?' };
+export const metadata: Metadata = {
+  title: 'Blog — Alpha Revízie | Odborné články o revíziách VTZ',
+  description: 'Praktické informácie o revíziách vyhradených technických zariadení. Kedy treba revíziu kotla, elektriky, kompresora alebo výťahu?',
+  alternates: { canonical: '/blog' },
+  openGraph: { title: 'Blog — Alpha Revízie', description: 'Odborné články o revíziách VTZ.', url: 'https://alpharevizie.sk/blog', locale: 'sk_SK', type: 'website' },
+};
 
 const posts = [
   {slug:'revizia-elektrickej-instalacie',icon:'⚡',tag:'Elektrické',color:'#00d4ff',bg:'rgba(0,212,255,0.12)',title:'Kedy potrebujete revíziu elektrickej inštalácie?',desc:'Máte byt, dom alebo prevádzku? Zo zákona musíte mať pravidelnú revíziu elektriky. Aké sú lehoty a čo vám hrozí bez nej?',date:'15. marca 2026'},
@@ -16,6 +22,7 @@ const posts = [
 export default function BlogPage() {
   return (
     <>
+      <BreadcrumbJsonLd items={[{name:'Domov',url:'https://alpharevizie.sk'},{name:'Blog',url:'https://alpharevizie.sk/blog'}]} />
       <section className="bg-[#111] pt-36 pb-20 px-8">
         <div className="max-w-[1200px] mx-auto">
           <Reveal>
