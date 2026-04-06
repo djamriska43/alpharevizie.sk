@@ -61,7 +61,7 @@ export default function ServiceDetail({ serviceKey }: { serviceKey: ServiceKey }
                 <div className={i > 0 ? 'mt-16' : ''}>
                   <h2 className="text-xl font-extrabold tracking-tight text-white mb-5 leading-snug">{section.title}</h2>
                   {section.paragraphs.map((p, j) => (
-                    <p key={j} className="text-gray-400 leading-relaxed mb-4 text-[0.95rem]">{p}</p>
+                    <p key={j} className="text-gray-400 leading-relaxed mb-4 text-[0.95rem]" dangerouslySetInnerHTML={{__html:p}} />
                   ))}
                 </div>
               </Reveal>
