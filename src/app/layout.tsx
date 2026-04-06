@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
   icons: { icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }] },
   openGraph: {
-    title: 'Revízie VTZ na celom Slovensku — Alpha Revízie',
-    description: 'Revízie elektrických, plynových, tlakových a zdvíhacích zariadení. Certifikovaní RT, revízna správa s pečiatkou. Zavolajte ešte dnes.',
+    title: 'Alpha Revízie — kompletné revízie VTZ na jednom mieste',
+    description: 'Elektrické, plynové, tlakové aj zdvíhacie zariadenia po celom Slovensku. Certifikovaní revízni technici. ☎ +421 952 352 669',
     url: 'https://alpharevizie.sk',
     siteName: 'Alpha Revízie',
     locale: 'sk_SK',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Revízie VTZ na celom Slovensku — Alpha Revízie',
-    description: 'Elektrické, plynové, tlakové a zdvíhacie zariadenia. Certifikovaní RT, celé Slovensko.',
+    title: 'Alpha Revízie — kompletné revízie VTZ na jednom mieste',
+    description: 'Elektrické, plynové, tlakové aj zdvíhacie zariadenia po celom Slovensku. Certifikovaní revízni technici. ☎ +421 952 352 669',
     images: ['/og-image.png'],
   },
 };
