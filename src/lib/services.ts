@@ -27,6 +27,52 @@ export const services = {
       { icon: '⚡', text: 'Priestory s nebezp. výbuchu', badge: 'každé 2 roky' },
       { icon: '🔨', text: 'Stavenisko', badge: 'každých 6 mesiacov' },
     ],
+    extended: [
+      {
+        title: 'Čo kontroluje revízny technik pri revízii elektriky?',
+        paragraphs: [
+          'Revízia elektrickej inštalácie nie je len „obídenie rozvádzača." Revízny technik vykoná vizuálnu prehliadku celej inštalácie — skontroluje stav rozvádzačov, ističov, prúdových chráničov, kabeláže, zásuviek, svietidiel a ich pripojení. Hľadá viditeľné poškodenia, nevyhovujúce spoje, chýbajúce kryty a iné nedostatky.',
+          'Po vizuálnej prehliadke nasledujú merania — izolačný odpor vodičov, impedancia poruchovej slučky, odpor ochranných vodičov, overenie funkčnosti prúdových chráničov (RCD) a kontrola ochrany pred zásahom elektrickým prúdom. Výsledky meraní sa zaznamenajú do protokolu, ktorý je súčasťou revíznej správy.',
+          'Ak revízny technik nájde závady, rozdelí ich na závady brániace bezpečnej prevádzke (zariadenie nemožno ďalej prevádzkovať) a závady nebrániace bezpečnej prevádzke (zariadenie sa môže používať, ale závada sa musí odstrániť do stanoveného termínu).',
+        ],
+      },
+      {
+        title: 'Lehoty periodických revízií elektrickej inštalácie',
+        paragraphs: [
+          'Lehoty odborných prehliadok a odborných skúšok (OP a OS) elektrickej inštalácie určuje príloha č. 8 vyhlášky č. 508/2009 Z. z. Lehota závisí od dvoch faktorov — od druhu objektu (tabuľka A) a od klasifikácie vonkajších vplyvov (tabuľka B). Platí vždy kratšia z oboch lehôt.',
+          'Podľa druhu objektu sú lehoty nasledovné: murovaná obytná a kancelárska budova — každých 5 rokov. Školy, materské školy, jasle, hotely, ubytovacie zariadenia a rekreačné strediská — každé 3 roky. Výškové budovy a objekty určené na zhromažďovanie viac ako 250 osôb (napríklad obchodné centrá, kultúrne zariadenia, stanice hromadnej dopravy) — každé 2 roky. Objekty zhotovené z horľavých materiálov so stupňom horľavosti C, D, E a F — každé 2 roky. Dočasné elektrické inštalácie, napríklad na staveniskách — každých 6 mesiacov.',
+          'Pre zariadenia na ochranu pred účinkami atmosférickej elektriny (bleskozvody) platia lehoty podľa hladiny ochrany: hladina I a II — každé 2 roky, hladina III a IV — každé 4 roky. V priestore s nebezpečenstvom výbuchu je lehota 1 rok.',
+        ],
+      },
+      {
+        title: 'Východisková a periodická revízia — aký je rozdiel?',
+        paragraphs: [
+          'Východisková revízia sa vykonáva pred prvým uvedením elektrickej inštalácie do prevádzky. Potrebujete ju vždy, keď sa robí nová elektroinštalácia — napríklad v novostavbe, po kompletnej rekonštrukcii elektriky, po rozšírení existujúcej inštalácie alebo po zmene istenia. Bez platnej východiskovej revíznej správy nesmie byť zariadenie uvedené do prevádzky.',
+          'Periodická revízia sa vykonáva počas prevádzky v pravidelných lehotách podľa prílohy č. 8 vyhlášky č. 508/2009 Z. z. Jej cieľom je overiť, že inštalácia je naďalej v bezpečnom stave a spĺňa požiadavky na bezpečnú prevádzku. Obe revízie vykonáva výhradne revízny technik s platným osvedčením.',
+        ],
+      },
+      {
+        title: 'Revízia elektrických spotrebičov a ručného náradia',
+        paragraphs: [
+          'Okrem elektrickej inštalácie podliehajú revízii aj elektrické spotrebiče a elektrické ručné náradie počas ich používania. Rozsah a lehoty revízií upravuje technická norma STN 33 1630:2025, ktorá nahradila predchádzajúce normy STN 33 1610 a STN 33 1600.',
+          'STN 33 1630:2025 klasifikuje spotrebiče a náradie do skupín A až E podľa spôsobu a prostredia používania. Lehoty kontrol a revízií sa líšia podľa skupiny — od 1 mesiaca pri náradí v priemyselnom použití až po 24 mesiacov pri spotrebičoch v bežnom prostredí. Presné lehoty závisenia od konkrétneho zariadenia a prostredia, v ktorom sa používa.',
+        ],
+      },
+      {
+        title: 'Čo obsahuje revízna správa?',
+        paragraphs: [
+          'Po vykonaní revízie vám dodáme kompletnú revíznu správu s okrúhlou pečiatkou revízneho technika. Revízna správa obsahuje identifikáciu revidovaného zariadenia, rozsah a druh revízie (východisková alebo periodická), súpis vykonaných meraní s nameranými hodnotami, zoznam zistených závad s uvedením ich závažnosti a celkový záver — či je zariadenie spôsobilé alebo nespôsobilé na bezpečnú prevádzku.',
+          'Revízna správa s okrúhlou pečiatkou revízneho technika je doklad, ktorý od vás vyžaduje zákon, inšpektorát práce aj poisťovňa. Odporúčame ju uchovávať po celú dobu prevádzky zariadenia — pri kontrole z inšpektorátu práce ju budete potrebovať predložiť.',
+        ],
+      },
+      {
+        title: 'Čo hrozí bez platnej revízie elektrickej inštalácie?',
+        paragraphs: [
+          'Prevádzkovanie elektrickej inštalácie bez platnej revízie je porušenie § 13 zákona č. 124/2006 Z. z. o bezpečnosti a ochrane zdravia pri práci. Inšpektorát práce môže za toto porušenie uložiť pokutu až do výšky 100 000 €. V prípade pracovného úrazu na nezrevídovanom zariadení nesie prevádzkovateľ plnú zodpovednosť — vrátane trestnoprávnej.',
+          'Rovnako dôležitý je vzťah s poisťovňou. Ak dôjde k škodovej udalosti (napríklad požiar spôsobený skratom) a vy nemáte platnú revíznu správu elektrickej inštalácie, poisťovňa má právo odmietnuť vyplatenie poistného plnenia. Pravidelná revízia elektriky nie je len papier do šuflíka — je to ochrana vás, vašich zamestnancov a vášho majetku.',
+        ],
+      },
+    ],
   },
   plyn: {
     slug: 'plynove-zariadenia',

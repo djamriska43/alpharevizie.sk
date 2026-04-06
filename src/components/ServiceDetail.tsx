@@ -6,6 +6,7 @@ import { services, ServiceKey } from '@/lib/services';
 
 export default function ServiceDetail({ serviceKey }: { serviceKey: ServiceKey }) {
   const s = services[serviceKey];
+  const extended = 'extended' in s ? (s as any).extended as { title: string; paragraphs: string[] }[] : [];
   return (
     <>
       <section className="bg-[#111] pt-36 pb-20 px-8">
@@ -50,6 +51,25 @@ export default function ServiceDetail({ serviceKey }: { serviceKey: ServiceKey }
           </Reveal>
         </div>
       </section>
+
+      {/* EXTENDED SEO CONTENT */}
+      {extended.length > 0 && (
+        <section className="py-20 px-8 bg-[#111] border-t border-white/5">
+          <div className="max-w-[800px] mx-auto">
+            {extended.map((section, i) => (
+              <Reveal key={i} delay={i * 0.05}>
+                <div className={i > 0 ? 'mt-16' : ''}>
+                  <h2 className="text-xl font-extrabold tracking-tight text-white mb-5 leading-snug">{section.title}</h2>
+                  {section.paragraphs.map((p, j) => (
+                    <p key={j} className="text-gray-400 leading-relaxed mb-4 text-[0.95rem]">{p}</p>
+                  ))}
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      )}
+
       <CTASection />
     </>
   );
