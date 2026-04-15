@@ -15,7 +15,13 @@ export const metadata: Metadata = {
   description: 'Revízie vyhradených technických zariadení ✓ Elektrické ✓ Plynové ✓ Tlakové ✓ Zdvíhacie. Revízna správa s pečiatkou RT. Certifikovaní technici, celé Slovensko. Zavolajte +421 952 352 669.',
   keywords: 'revízie VTZ, revízia kotla, revízia elektrickej inštalácie, revízia bleskozvodu, revízia tlakovej nádoby, revízia žeriavu, revízia kompresora, revízia plynového kotla, vyhláška 508/2009',
   alternates: { canonical: '/' },
-  icons: { icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }] },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
+    ],
+    apple: { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+  },
   openGraph: {
     title: 'Alpha Revízie — kompletné revízie VTZ na jednom mieste',
     description: 'Elektrické, plynové, tlakové aj zdvíhacie zariadenia po celom Slovensku. Certifikovaní revízni technici. ☎ +421 952 352 669',
