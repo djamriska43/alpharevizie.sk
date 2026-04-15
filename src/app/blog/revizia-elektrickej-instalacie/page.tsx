@@ -8,6 +8,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Kedy potrebujete revíziu elektrickej inštalácie? | Alpha Revízie',
   description: 'Revízia elektrickej inštalácie v byte, dome aj firme. Aké sú zákonné lehoty, čo kontroluje revízny technik a koľko stojí revízia elektriky na Slovensku.',
+  alternates: { canonical: '/blog/revizia-elektrickej-instalacie' },
 };
 
 export default function Article() {
